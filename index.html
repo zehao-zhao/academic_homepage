@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Academic Homepage</title>
+<style>
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    line-height: 1.6;
+  }
+  .header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+  .header .text {
+    flex: 2;
+    min-width: 260px;
+  }
+  .header .photo {
+    flex: 1;
+    text-align: center;
+    min-width: 200px;
+    margin-top: 20px;
+  }
+  /* Avatar circle used instead of external photo */
+  .avatar {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: #e0e0e0;
+    display: inline-block;
+  }
+  .links {
+    margin-top: 10px;
+  }
+  .links a {
+    margin-right: 8px;
+    text-decoration: none;
+    color: #007acc;
+  }
+  .section {
+    margin-bottom: 40px;
+  }
+  .paper {
+    display: flex;
+    margin-bottom: 20px;
+  }
+  /* Placeholder box used instead of external paper thumbnail */
+  .paper .placeholder {
+    width: 120px;
+    height: 80px;
+    margin-right: 20px;
+    border-radius: 4px;
+    background: #f0f0f0;
+    display: inline-block;
+  }
+  .paper .description {
+    background: #f7f7f7;
+    padding: 10px;
+    border-radius: 4px;
+    flex: 1;
+  }
+</style>
+</head>
+<body>
+<div class="header">
+  <div class="text">
+    <h1>Your Name</h1>
+    <p>
+      I'm a research scientist focused on reinforcement learning, large language models, and post-training methods such as RLHF, DPO, and PPO. My work aims to develop practical and theoretically sound approaches for aligning AI systems with human values and solving complex sequential decision problems.
+    </p>
+    <div class="links">
+      <a href="#">Email</a> /
+      <a href="#">CV</a> /
+      <a href="#">Bio</a> /
+      <a href="#">Google Scholar</a> /
+      <a href="#">GitHub</a>
+    </div>
+  </div>
+  <div class="photo">
+    <div class="avatar"></div>
+  </div>
+</div>
+
+<div class="section">
+  <h2>Research</h2>
+  <p>I'm interested in reinforcement learning, generative models, and scalable training of large language models. Below are highlights of some recent projects.</p>
+  
+  <div class="paper">
+    <div class="placeholder"></div>
+    <div class="description">
+      <strong>Efficient PPO for Large Language Models</strong><br>
+      <em>Conference on AI, 2025</em><br>
+      <a href="#">project page</a> / <a href="#">arXiv</a>
+      <p>A scalable proximal policy optimization method tailored for fine-tuning large language models, reducing memory footprint and improving stability.</p>
+    </div>
+  </div>
+
+  <div class="paper">
+    <div class="placeholder"></div>
+    <div class="description">
+      <strong>DPO: Direct Preference Optimization for RLHF</strong><br>
+      <em>RL Conference, 2024</em><br>
+      <a href="#">project page</a> / <a href="#">arXiv</a>
+      <p>A practical algorithm for aligning models with human preferences by optimizing directly over preference data, bridging the gap between RLHF and supervised fine-tuning.</p>
+    </div>
+  </div>
+
+  <div class="paper">
+    <div class="placeholder"></div>
+    <div class="description">
+      <strong>Hierarchical Reinforcement Learning for Robotics</strong><br>
+      <em>Robotics Journal, 2023</em><br>
+      <a href="#">project page</a> / <a href="#">arXiv</a>
+      <p>This work explores hierarchical RL for long-horizon tasks in robotics, enabling sample-efficient learning of complex behaviours.</p>
+    </div>
+  </div>
+</div>
+
+<div class="section">
+  <h2>Teaching & Outreach</h2>
+  <p>I've mentored students on RL and LLM projects, and I co-organize reading groups on RLHF and policy optimization.</p>
+</div>
+
+</body>
+</html>
