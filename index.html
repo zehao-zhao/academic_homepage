@@ -101,17 +101,45 @@
       border-radius: 4px;
       flex: 1;
     }
-    .experience-item,
+    /* Education item margin and styling */
     .education-item {
       margin-bottom: 15px;
     }
-    .experience-item strong,
     .education-item strong {
       display: block;
     }
-    .experience-item span,
     .education-item span {
       font-style: italic;
+    }
+    /* Experience layout: align company/location and role/dates on single lines */
+    .experience-item {
+      margin-bottom: 15px;
+    }
+    .experience-item .header-row {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+    }
+    .experience-item .header-row .company,
+    .experience-item .header-row .role {
+      font-weight: bold;
+    }
+    .experience-item .header-row .location,
+    .experience-item .header-row .dates {
+      white-space: nowrap;
+    }
+    /* Remove indentation for bullet lists so bullets align under headers */
+    .experience-item ul {
+      margin: 0;
+      padding-left: 16px;
+    }
+    .experience-item ul li {
+      margin: 0;
+      padding: 0;
+    }
+    /* Paragraphs inside experience items (used to display bullet items) have no top/bottom margin */
+    .experience-item p {
+      margin: 0;
     }
   </style>
 </head>
@@ -218,53 +246,85 @@
   <div class="section">
     <h2>Experience</h2>
     <div class="experience-item">
-      <p><strong>SAMSUNG Research America</strong>, Mountain View, CA</p>
-      <p>Generative AI Research Intern, Advanced ML Lab (AWS Bedrock, Kendra, LangChain/LangGraph) · May&nbsp;2025 – Present</p>
-      <ul>
-        <li>Built and optimized an LLM‑based internal search engine; improved top‑k document relevance by 35% and latency by 40%.</li>
-        <li>Designed and deployed an LLM‑powered recommender system for semantic ad matching, boosting click‑through rates by 20%.</li>
-      </ul>
+      <div class="header-row">
+        <div class="company">SAMSUNG Research America</div>
+        <div class="location">Mountain View, CA</div>
+      </div>
+      <div class="header-row">
+        <div class="role">Generative AI Research Intern, Advanced ML Lab (AWS Bedrock, Kendra, LangChain/LangGraph)</div>
+        <div class="dates">May&nbsp;2025 – Present</div>
+      </div>
+      <p>• Built and optimized an LLM‑based internal search engine.</p>
+      <p>• Improved top‑k document relevance by 35% and latency by 40%.</p>
+      <p>• Designed and deployed an LLM‑powered recommender system for semantic ad matching.</p>
+      <p>• Boosted click‑through rates by 20%.</p>
     </div>
     <div class="experience-item">
-      <p><strong>University of Southern California</strong>, Los&nbsp;Angeles, CA</p>
-      <p>Research Assistant · Aug&nbsp;2024 – Present</p>
-      <ul>
-        <li>Developing multi‑agent general‑sum and zero‑sum game algorithms for large‑scale autonomous systems.</li>
-        <li>Building reasoning circuits via autoencoders to interpret LLM reasoning on complex maths and decision‑making tasks.</li>
-      </ul>
+      <div class="header-row">
+        <div class="company">University of Southern California</div>
+        <div class="location">Los&nbsp;Angeles, CA</div>
+      </div>
+      <div class="header-row">
+        <div class="role">Research Assistant</div>
+        <div class="dates">Aug&nbsp;2024 – Present</div>
+      </div>
+      <p>• Developing multi‑agent general‑sum and zero‑sum game algorithms for large‑scale autonomous systems.</p>
+      <p>• Building reasoning circuits via autoencoders to interpret LLM reasoning on complex maths and decision‑making tasks.</p>
     </div>
     <div class="experience-item">
-      <p><strong>LLM Stealth Startup (MIT&nbsp;Momentum Accelerator)</strong>, Boston, MA &amp; San&nbsp;Francisco, CA</p>
-      <p>Founding Engineer · Aug&nbsp;2023 – Aug&nbsp;2024</p>
-      <ul>
-        <li>Post‑trained an LLM with over 100 users and 1 000 documents for a social platform to foster friendships and dating experiences.</li>
-        <li>Developed a personalised AI agent for tailored event recommendations using LangGraph, increasing user retention by 500%.</li>
-      </ul>
+      <div class="header-row">
+        <div class="company">LLM Stealth Startup (MIT&nbsp;Momentum Accelerator)</div>
+        <div class="location">Boston, MA &amp; San&nbsp;Francisco, CA</div>
+      </div>
+      <div class="header-row">
+        <div class="role">Founding Engineer</div>
+        <div class="dates">Aug&nbsp;2023 – Aug&nbsp;2024</div>
+      </div>
+      <p>• Post‑trained an LLM with over&nbsp;100 users and 1 000 documents for a social platform.</p>
+      <p>• Fostered friendships and dating experiences.</p>
+      <p>• Developed a personalised AI agent for tailored event recommendations using LangGraph.</p>
+      <p>• Increased user retention by 500%.</p>
     </div>
     <div class="experience-item">
-      <p><strong>Ameriprise Financial</strong>, Boston, MA</p>
-      <p>Data Scientist · Feb&nbsp;2023 – Aug&nbsp;2023</p>
-      <ul>
-        <li>Built predictive models to forecast geographical location growth (500 m grid level) within Europe for real estate investment.</li>
-        <li>Employed deep neural networks to increase testing accuracy by 50% and used boosting algorithms for interpretability.</li>
-        <li>Researched and developed data‑specific training metrics to enhance model performance.</li>
-      </ul>
+      <div class="header-row">
+        <div class="company">Ameriprise Financial</div>
+        <div class="location">Boston, MA</div>
+      </div>
+      <div class="header-row">
+        <div class="role">Data Scientist</div>
+        <div class="dates">Feb&nbsp;2023 – Aug&nbsp;2023</div>
+      </div>
+      <p>• Built predictive models to forecast geographical location growth (500 m grid level) within Europe for real estate investment.</p>
+      <p>• Employed deep neural networks to increase testing accuracy by 50%.</p>
+      <p>• Used boosting algorithms for interpretability.</p>
+      <p>• Researched and developed data‑specific training metrics to enhance model performance.</p>
     </div>
     <div class="experience-item">
-      <p><strong>MIT Operations Research Center</strong>, Boston, MA</p>
-      <p>Research Assistant · Sep&nbsp;2022 – Feb&nbsp;2023</p>
-      <ul>
-        <li>Proposed integer programming approximation algorithms that outperform state‑of‑the‑art solvers on selected NP‑hard problems.</li>
-        <li>Developed a machine learning scheme to maximise cancer patient survival time under various treatment regimes, improving AUC to 80%.</li>
-      </ul>
+      <div class="header-row">
+        <div class="company">MIT Operations Research Center</div>
+        <div class="location">Boston, MA</div>
+      </div>
+      <div class="header-row">
+        <div class="role">Research Assistant</div>
+        <div class="dates">Sep&nbsp;2022 – Feb&nbsp;2023</div>
+      </div>
+      <p>• Proposed integer programming approximation algorithms that outperform state‑of‑the‑art solvers on selected NP‑hard problems.</p>
+      <p>• Developed a machine learning scheme to maximise cancer patient survival time under various treatment regimes.</p>
+      <p>• Improved AUC to 80%.</p>
     </div>
     <div class="experience-item">
-      <p><strong>Alpha&nbsp;Square&nbsp;Group</strong>, New&nbsp;York, NY</p>
-      <p>Quantitative Research Intern · Jun&nbsp;2022 – Aug&nbsp;2022</p>
-      <ul>
-        <li>Created a natural‑language processing model to summarise alternative data, including customer reviews, and quantify key words.</li>
-        <li>Constructed a smart scoring system for primary market investments based on 500+ historical deals, aiding investment decision‑making.</li>
-      </ul>
+      <div class="header-row">
+        <div class="company">Alpha&nbsp;Square&nbsp;Group</div>
+        <div class="location">New&nbsp;York, NY</div>
+      </div>
+      <div class="header-row">
+        <div class="role">Quantitative Research Intern</div>
+        <div class="dates">Jun&nbsp;2022 – Aug&nbsp;2022</div>
+      </div>
+      <p>• Created a natural‑language processing model to summarise alternative data, including customer reviews.</p>
+      <p>• Quantified key words.</p>
+      <p>• Constructed a smart scoring system for primary market investments based on 500+ historical deals.</p>
+      <p>• Aided investment decision‑making.</p>
     </div>
   </div>
 
