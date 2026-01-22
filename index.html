@@ -36,13 +36,19 @@
       display: inline-block;
       /* Ensure the avatar image fills the square and maintains aspect ratio */
       object-fit: cover;
-      /* Adjust the cropping of the avatar so the face is fully visible */
-      object-position: center top;
+      /* Center the avatar so the head and shoulders are more balanced */
+      object-position: center;
     }
 
     /* Center the name within the text section */
     .header .text h1 {
       text-align: center;
+    }
+    /* Center all content inside the text section to align the name in the middle */
+    .header .text {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
     .links {
       margin-top: 10px;
