@@ -1,132 +1,207 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Academic Homepage</title>
-<style>
-  body {
-    font-family: Arial, Helvetica, sans-serif;
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 20px;
-    line-height: 1.6;
-  }
-  .header {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    margin-bottom: 40px;
-  }
-  .header .text {
-    flex: 2;
-    min-width: 260px;
-  }
-  .header .photo {
-    flex: 1;
-    text-align: center;
-    min-width: 200px;
-    margin-top: 20px;
-  }
-  /* Avatar circle used instead of external photo */
-  .avatar {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    background: #e0e0e0;
-    display: inline-block;
-  }
-  .links {
-    margin-top: 10px;
-  }
-  .links a {
-    margin-right: 8px;
-    text-decoration: none;
-    color: #007acc;
-  }
-  .section {
-    margin-bottom: 40px;
-  }
-  .paper {
-    display: flex;
-    margin-bottom: 20px;
-  }
-  /* Placeholder box used instead of external paper thumbnail */
-  .paper .placeholder {
-    width: 120px;
-    height: 80px;
-    margin-right: 20px;
-    border-radius: 4px;
-    background: #f0f0f0;
-    display: inline-block;
-  }
-  .paper .description {
-    background: #f7f7f7;
-    padding: 10px;
-    border-radius: 4px;
-    flex: 1;
-  }
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Andy (Zehao) Zhao – Academic Homepage</title>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 20px;
+      line-height: 1.6;
+    }
+    .header {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      margin-bottom: 40px;
+    }
+    .header .text {
+      flex: 2;
+      min-width: 260px;
+    }
+    .header .photo {
+      flex: 1;
+      text-align: center;
+      min-width: 200px;
+      margin-top: 20px;
+    }
+    .avatar {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      background: #e0e0e0;
+      display: inline-block;
+    }
+    .links {
+      margin-top: 10px;
+    }
+    .links a {
+      margin-right: 8px;
+      text-decoration: none;
+      color: #007acc;
+    }
+    .section {
+      margin-bottom: 40px;
+    }
+    .paper {
+      display: flex;
+      flex-wrap: wrap;
+      margin-bottom: 20px;
+    }
+    .paper .placeholder {
+      width: 120px;
+      height: 80px;
+      margin-right: 20px;
+      border-radius: 4px;
+      background: #f0f0f0;
+      display: inline-block;
+    }
+    .paper .description {
+      background: #f7f7f7;
+      padding: 10px;
+      border-radius: 4px;
+      flex: 1;
+    }
+    .experience-item,
+    .education-item {
+      margin-bottom: 15px;
+    }
+    .experience-item strong,
+    .education-item strong {
+      display: block;
+    }
+    .experience-item span,
+    .education-item span {
+      font-style: italic;
+    }
+  </style>
 </head>
 <body>
-<div class="header">
-  <div class="text">
-    <h1>Your Name</h1>
-    <p>
-      I'm a research scientist focused on reinforcement learning, large language models, and post-training methods such as RLHF, DPO, and PPO. My work aims to develop practical and theoretically sound approaches for aligning AI systems with human values and solving complex sequential decision problems.
-    </p>
-    <div class="links">
-      <a href="#">Email</a> /
-      <a href="#">CV</a> /
-      <a href="#">Bio</a> /
-      <a href="#">Google Scholar</a> /
-      <a href="#">GitHub</a>
+  <div class="header">
+    <div class="text">
+      <h1>Andy (Zehao) Zhao</h1>
+      <p>
+        I am a PhD candidate in Electrical Engineering &amp; Computer Science at the University of
+        Southern California’s Center of Autonomy &amp; Artificial Intelligence, advised by Professors
+        Rahul&nbsp;Jain and Bhaskar&nbsp;Krishnamachari. My research blends reinforcement learning,
+        multi‑agent game theory and large language models, with an emphasis on strategic reasoning,
+        efficient policy optimisation and interpretability.
+      </p>
+      <div class="links">
+        <a href="mailto:zhaozeha@usc.edu">Email</a> /
+        <a href="files/AndyZhao_resume_2025_Fall.pdf">CV</a> /
+        <a href="https://zehao.org">Website</a> /
+        <a href="https://scholar.google.com/citations?user=vd1CoNIAAAAJ&hl=en">Google Scholar</a> /
+        <a href="https://github.com/zehao-zhao">GitHub</a>
+      </div>
     </div>
-  </div>
-  <div class="photo">
-    <div class="avatar"></div>
-  </div>
-</div>
-
-<div class="section">
-  <h2>Research</h2>
-  <p>I'm interested in reinforcement learning, generative models, and scalable training of large language models. Below are highlights of some recent projects.</p>
-  
-  <div class="paper">
-    <div class="placeholder"></div>
-    <div class="description">
-      <strong>Efficient PPO for Large Language Models</strong><br>
-      <em>Conference on AI, 2025</em><br>
-      <a href="#">project page</a> / <a href="#">arXiv</a>
-      <p>A scalable proximal policy optimization method tailored for fine-tuning large language models, reducing memory footprint and improving stability.</p>
+    <div class="photo">
+      <!-- Replace the gray circle with a headshot by updating profile.png -->
+      <img src="profile.png" alt="Andy Zhao" class="avatar" />
     </div>
   </div>
 
-  <div class="paper">
-    <div class="placeholder"></div>
-    <div class="description">
-      <strong>DPO: Direct Preference Optimization for RLHF</strong><br>
-      <em>RL Conference, 2024</em><br>
-      <a href="#">project page</a> / <a href="#">arXiv</a>
-      <p>A practical algorithm for aligning models with human preferences by optimizing directly over preference data, bridging the gap between RLHF and supervised fine-tuning.</p>
+  <div class="section">
+    <h2>Research Highlights</h2>
+    <p>Selected recent projects and publications that capture my interests in reinforcement learning,
+      strategic decision making and AI safety.</p>
+
+    <div class="paper">
+      <div class="placeholder"></div>
+      <div class="description">
+        <strong>Generalized Quantal Response Equilibrium: Existence and Efficient Learning</strong><br>
+        <em>NeurIPS 2025</em><br>
+        <p>We establish existence proofs and propose a scalable learning algorithm for a broad class of quantal
+        response equilibria, enabling robust modelling of bounded‑rational agents in multi‑agent systems.</p>
+      </div>
+    </div>
+
+    <div class="paper">
+      <div class="placeholder"></div>
+      <div class="description">
+        <strong>Fine‑Tuning LLMs for Strategic Multi‑Agent Reasoning</strong><br>
+        <em>AISTATS 2025</em><br>
+        <p>Introduces a framework for aligning large language models with game‑theoretic reasoning tasks,
+        combining preference optimisation with reinforcement learning in Markov games.</p>
+      </div>
+    </div>
+
+    <div class="paper">
+      <div class="placeholder"></div>
+      <div class="description">
+        <strong>Episodic Zero‑Sum Game Learning</strong><br>
+        <em>CDC 2025</em><br>
+        <p>Develops sample‑efficient algorithms for learning in episodic zero‑sum games under unknown rewards and
+        dynamics, with provable regret bounds and empirical performance on simulated autonomous
+        driving scenarios.</p>
+      </div>
+    </div>
+
+    <div class="paper">
+      <div class="placeholder"></div>
+      <div class="description">
+        <strong>End‑to‑End Learning for Non‑Markovian Control</strong><br>
+        <em>ICML 2024</em><br>
+        <p>Presents an RL framework for solving non‑Markovian optimal control problems by learning latent
+        representations and controllers jointly, bridging model‑based control and deep RL.</p>
+      </div>
     </div>
   </div>
 
-  <div class="paper">
-    <div class="placeholder"></div>
-    <div class="description">
-      <strong>Hierarchical Reinforcement Learning for Robotics</strong><br>
-      <em>Robotics Journal, 2023</em><br>
-      <a href="#">project page</a> / <a href="#">arXiv</a>
-      <p>This work explores hierarchical RL for long-horizon tasks in robotics, enabling sample-efficient learning of complex behaviours.</p>
+  <div class="section">
+    <h2>Experience</h2>
+    <div class="experience-item">
+      <strong>SAMSUNG Research America – Generative AI Research Intern</strong>
+      <span>May&nbsp;2025 – Present, Mountain View, CA</span>
+      <p>Built and optimized an LLM‑based internal search engine, improving top‑k document relevance by 35%
+         and latency by 40%. Designed and deployed a recommender system for semantic ad matching, boosting
+         click‑through rates by 20%.</p>
+    </div>
+    <div class="experience-item">
+      <strong>University of Southern California – Research Assistant</strong>
+      <span>Aug&nbsp;2024 – Present, Los Angeles, CA</span>
+      <p>Developing multi‑agent general‑sum and zero‑sum game algorithms for large‑scale autonomous
+         systems. Building reasoning circuits via autoencoders to interpret LLM reasoning on complex
+         maths and decision‑making tasks.</p>
+    </div>
+    <div class="experience-item">
+      <strong>LLM Stealth Startup – Founding Engineer</strong>
+      <span>Aug&nbsp;2023 – Aug&nbsp;2024, Boston, MA &amp; San Francisco, CA</span>
+      <p>Post‑trained an LLM on 100+ users and 1 000+ documents for a social platform to foster friendships
+         and dating experiences. Developed a personalized AI agent for event recommendations, increasing
+         user retention by 500%.</p>
+    </div>
+    <div class="experience-item">
+      <strong>Ameriprise Financial – Data Scientist</strong>
+      <span>Feb&nbsp;2023 – Aug&nbsp;2023, Boston, MA</span>
+      <p>Built predictive models to forecast geographical growth at 500 m resolution for real estate
+         investment. Employed deep neural networks and boosting methods to improve accuracy and interpretability.</p>
     </div>
   </div>
-</div>
 
-<div class="section">
-  <h2>Teaching & Outreach</h2>
-  <p>I've mentored students on RL and LLM projects, and I co-organize reading groups on RLHF and policy optimization.</p>
-</div>
-
+  <div class="section">
+    <h2>Education</h2>
+    <div class="education-item">
+      <strong>University of Southern California</strong>
+      <span>PhD Candidate, Electrical Engineering &amp; Computer Science</span>
+      <p>Center of Autonomy &amp; Artificial Intelligence, GPA 4.0/4.0. Awards include the Ming Hsieh Fellowship,
+         Viterbi Graduate Fellowship and the Early Career Innovator Award (2023 – present).</p>
+    </div>
+    <div class="education-item">
+      <strong>Massachusetts Institute of Technology</strong>
+      <span>M.S. in Business Analytics &amp; Operations Research</span>
+      <p>GPA 5.0/5.0. Second place in the MIT Analytics Lab Contest (40 teams) and Top 10 in the MIT Hackathon
+         (1 000+ attendees) (2022 – 2023).</p>
+    </div>
+    <div class="education-item">
+      <strong>University of California, Berkeley</strong>
+      <span>B.S. in Computer Science, Statistics, Mathematics &amp; Data Science</span>
+      <p>GPA 3.9/4.0. Dean’s List (8 semesters). Awards include first place in the California Actuarial League
+         competition and finalist in the Mathematical Contest in Modeling (2018 – 2022).</p>
+    </div>
+  </div>
 </body>
 </html>
