@@ -101,15 +101,35 @@
       border-radius: 4px;
       flex: 1;
     }
-    /* Education item margin and styling */
+    /* Education item margin and layout */
     .education-item {
       margin-bottom: 15px;
     }
-    .education-item strong {
-      display: block;
+    /* Education layout: align school/location and degree/dates on single lines */
+    .education-item .header-row {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
     }
-    .education-item span {
+    .education-item .school {
+      font-weight: bold;
+      font-size: 1em;
+    }
+    .education-item .location {
+      font-size: 0.95em;
+      white-space: nowrap;
+    }
+    .education-item .degree {
       font-style: italic;
+      font-size: 0.95em;
+    }
+    .education-item .dates {
+      font-size: 0.95em;
+      white-space: nowrap;
+    }
+    .education-item p {
+      margin: 0;
+      font-size: 0.95em;
     }
     /* Experience layout: align company/location and role/dates on single lines */
     .experience-item {
@@ -336,22 +356,38 @@
   <div class="section">
     <h2>Education <span class="small-links">(<a href="teaching.html">Teaching</a>&nbsp;/&nbsp;<a href="coursework.html">Coursework</a>&nbsp;/&nbsp;<a href="https://zehao.org">Website</a>)</span></h2>
     <div class="education-item">
-      <strong>University of Southern California</strong>
-      <span>PhD Candidate, Electrical Engineering &amp; Computer Science</span>
-      <p>Center of Autonomy &amp; Artificial Intelligence, GPA 4.0/4.0. Awards include the Ming Hsieh Fellowship,
-         Viterbi Graduate Fellowship and the Early Career Innovator Award (2023 – present).</p>
+      <div class="header-row">
+        <div class="school">University of Southern California</div>
+        <div class="location">Los&nbsp;Angeles, CA</div>
+      </div>
+      <div class="header-row">
+        <div class="degree">PhD Candidate in Electrical Engineering &amp; Computer Science, Center of Autonomy &amp; Artificial Intelligence, GPA:4/4</div>
+        <div class="dates">2023&nbsp;–&nbsp;Present</div>
+      </div>
+      <p>• Awards include the Ming&nbsp;Hsieh Fellowship, Viterbi Graduate Fellowship, Annenberg School Award and Early Career Innovator Award.</p>
     </div>
     <div class="education-item">
-      <strong>Massachusetts Institute of Technology</strong>
-      <span>M.S. in Business Analytics &amp; Operations Research</span>
-      <p>GPA 5.0/5.0. Second place in the MIT Analytics Lab Contest (40 teams) and Top 10 in the MIT Hackathon
-         (1 000+ attendees) (2022 – 2023).</p>
+      <div class="header-row">
+        <div class="school">Massachusetts Institute of Technology</div>
+        <div class="location">Cambridge, MA</div>
+      </div>
+      <div class="header-row">
+        <div class="degree">Master of Science in Business Analytics &amp; Operations Research, GPA:5.0/5.0</div>
+        <div class="dates">2022&nbsp;–&nbsp;2023</div>
+      </div>
+      <p>• Second place in the MIT Analytics Lab Contest (40&nbsp;teams); Top&nbsp;10 in the MIT Hackathon (1,000+ attendees).</p>
     </div>
     <div class="education-item">
-      <strong>University of California, Berkeley</strong>
-      <span>B.S. in Computer Science, Statistics, Mathematics &amp; Data Science</span>
-      <p>GPA 3.9/4.0. Dean’s List (8 semesters). Awards include first place in the California Actuarial League
-         competition and finalist in the Mathematical Contest in Modeling (2018 – 2022).</p>
+      <div class="header-row">
+        <div class="school">University of California, Berkeley</div>
+        <div class="location">Berkeley, CA</div>
+      </div>
+      <div class="header-row">
+        <div class="degree">Bachelor of Science in Computer Science, Statistics, Mathematics &amp; Data Science, GPA:3.9/4.0</div>
+        <div class="dates">2018&nbsp;–&nbsp;2022</div>
+      </div>
+      <p>• Awards: first place in the California Actuarial League competition; finalist in the Mathematics Contest in Modeling.</p>
+      <p>• Honors Thesis: Data Science Honors – Time series modelling on Finance; EECS Honors – PCA &amp; Facial Recognition.</p>
     </div>
     </div>
 
