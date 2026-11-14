@@ -1,9 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-labelledby="title">
-  <title id="title">Abstract startup network mark</title>
-  <rect width="128" height="128" rx="24" fill="#173b52"/>
-  <path d="M31 82 58 49l19 18 20-25" fill="none" stroke="#f6f3ec" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
-  <path d="m82 42 15 0 0 15" fill="none" stroke="#ed7a5a" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
-  <circle cx="31" cy="82" r="8" fill="#79aaa5"/>
-  <circle cx="58" cy="49" r="8" fill="#e7b85b"/>
-  <circle cx="77" cy="67" r="8" fill="#79aaa5"/>
-</svg>

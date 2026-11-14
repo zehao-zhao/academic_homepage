@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500&amp;family=IBM+Plex+Sans:wght@400;500;600&amp;family=IBM+Plex+Serif:wght@500&amp;display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="homepage.css">
+  <link rel="stylesheet" href="homepage.css?v=20261114b">
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -114,7 +114,7 @@
           <button class="text-button" type="button" data-research-filter="all" aria-pressed="false">show all</button>
         </div>
       </div>
-      <p class="section-note">Venue tags on works under review identify the submission venue. Images are drawn from linked work when available; concept thumbnails illustrate unpublished projects.</p>
+      <p class="section-note">Venue tags on works under review identify the submission venue. Research images are drawn from linked papers or project materials.</p>
 
       <div id="research-list" class="research-list">
         <article class="publication" data-selected="true">
@@ -180,56 +180,49 @@
           </div>
         </article>
 
-        <article class="publication" data-selected="false">
-          <img class="publication-image" src="assets/research/forecast-act-correct.webp" alt="Forecast, action, residual observation, and correction feedback loop">
+        <article class="publication publication--compact" data-selected="false">
           <div>
             <h3>Forecast, Act, Correct: Prediction Residual-Stability with Fallible Opponent Models</h3>
             <div class="publication-meta"><span class="venue">ICLR</span></div>
             <p class="publication-summary">A residual-stability framework for acting against imperfect opponent models, using prediction errors to correct behavior without destabilizing the learning loop.</p>
           </div>
         </article>
-        <article class="publication" data-selected="false">
-          <img class="publication-image" src="assets/research/hierarchical-plasticity.webp" alt="Long-context transformer with adaptation at multiple timescales">
+        <article class="publication publication--compact" data-selected="false">
           <div>
             <h3>Hierarchical Plasticity: Test-Time Adaptation in Long-Context Transformers</h3>
             <div class="publication-meta"><span class="venue">ICLR</span></div>
             <p class="publication-summary">A hierarchical approach to test-time adaptation that coordinates fast local updates, working memory, and slower model changes across long contexts.</p>
           </div>
         </article>
-        <article class="publication" data-selected="false">
-          <img class="publication-image" src="assets/research/coevolutionary-game.webp" alt="Network of co-evolving cooperative AI agents under a bounded context">
+        <article class="publication publication--compact" data-selected="false">
           <div>
             <h3>Co-evolutionary Cooperative Game for Multi-Self-Evolving AI Agents: Bounded-Context Equilibrium</h3>
             <div class="publication-meta"><span class="venue">AAAI</span></div>
             <p class="publication-summary">A cooperative-game formulation for populations of self-evolving agents whose policies and shared knowledge adapt under bounded context.</p>
           </div>
         </article>
-        <article class="publication" data-selected="false">
-          <img class="publication-image" src="assets/research/multi-agent-dpo.webp" alt="Multiple AI agents comparing strategic responses and updating their policies">
+        <article class="publication publication--compact" data-selected="false">
           <div>
             <h3>Multi-Agent DPO in Strategic Reasoning for LLM Post-Training</h3>
             <div class="publication-meta"><span class="venue">ICLR</span></div>
             <p class="publication-summary">Preference optimization for strategic multi-agent reasoning, aligning language-model policies through comparisons shaped by interacting opponents and collaborators.</p>
           </div>
         </article>
-        <article class="publication" data-selected="false">
-          <img class="publication-image" src="assets/research/shoreline-change.svg" alt="Satellite coastline with automatically extracted shorelines at multiple dates">
+        <article class="publication publication--compact" data-selected="false">
           <div>
             <h3><a href="https://doi.org/10.1016/j.margeo.2021.106628" target="_blank" rel="noopener noreferrer">Automatic shoreline extraction and change detection: A study on the southeast coast of Bangladesh</a></h3>
             <div class="publication-meta"><span>Marine Geology, 2021</span><span class="publication-links"><a href="https://doi.org/10.1016/j.margeo.2021.106628" target="_blank" rel="noopener noreferrer">Paper</a></span></div>
             <p class="publication-summary">An automated remote-sensing workflow for extracting forty years of shoreline positions and quantifying erosion and accretion along Bangladesh's southeast coast.</p>
           </div>
         </article>
-        <article class="publication" data-selected="false">
-          <img class="publication-image" src="assets/research/quantum-rng.svg" alt="Laser phase-noise measurement and accelerated random-bit extraction pipeline">
+        <article class="publication publication--compact" data-selected="false">
           <div>
             <h3><a href="https://arxiv.org/abs/2011.04130" target="_blank" rel="noopener noreferrer">Performance Optimization on Practical Quantum Random Number Generators</a></h3>
             <div class="publication-meta"><span><em>Physical Review Letters</em>, 2020</span><span class="publication-links"><a href="https://arxiv.org/abs/2011.04130" target="_blank" rel="noopener noreferrer">Paper</a></span></div>
             <p class="publication-summary">Improves min-entropy evaluation for laser phase-noise generators and accelerates Toeplitz-matrix post-processing with fast Fourier transforms.</p>
           </div>
         </article>
-        <article class="publication" data-selected="false">
-          <img class="publication-image" src="assets/research/periodic-streak-removal.svg" alt="Periodic image streaks detected in the frequency domain and removed">
+        <article class="publication publication--compact" data-selected="false">
           <div>
             <h3><a href="https://doi.org/10.1088/1742-6596/887/1/012078" target="_blank" rel="noopener noreferrer">Intelligent detection and removing of straight periodic streaks on digital images</a></h3>
             <div class="publication-meta"><span>Journal of Physics: Conference Series, 2017</span><span class="publication-links"><a href="https://doi.org/10.1088/1742-6596/887/1/012078" target="_blank" rel="noopener noreferrer">Paper</a></span></div>
@@ -293,8 +286,7 @@
           </div>
         </article>
 
-        <article class="experience-entry">
-          <img class="entry-mark entry-logo" src="assets/logos/startups.svg" alt="Startup network mark">
+        <article class="experience-entry experience-entry--no-logo">
           <div>
             <div class="entry-top"><span class="entry-org">Multiple Startups, LLM Post-Training and Agentic AI</span><span class="entry-year">2023–24</span></div>
             <div class="entry-role">Founding Research Engineer</div>
