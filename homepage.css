@@ -405,6 +405,11 @@ h3 {
   padding: 9px;
 }
 
+.experience-entry--no-logo {
+  grid-template-columns: 1fr;
+  padding-left: 92px;
+}
+
 .publication-links {
   display: inline-flex;
   flex-wrap: wrap;
@@ -613,6 +618,11 @@ h3 {
   .entry-mark {
     width: 44px;
     height: 44px;
+  }
+
+  .experience-entry--no-logo {
+    grid-template-columns: 1fr;
+    padding-left: 62px;
   }
 }
 
