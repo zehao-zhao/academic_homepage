@@ -3,376 +3,356 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Andy Zhao – Academic Homepage</title>
-  <style>
-    body {
-      font-family: Arial, Helvetica, sans-serif;
-      max-width: 900px;
-      margin: 0 auto;
-      padding: 20px;
-      line-height: 1.6;
-    }
-    .header {
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      margin-bottom: 40px;
-    }
-    .header .text {
-      flex: 2;
-      min-width: 260px;
-    }
-    .header .photo {
-      flex: 1;
-      text-align: center;
-      min-width: 200px;
-      margin-top: 20px;
-    }
-    .avatar {
-      width: 200px;
-      height: 200px;
-      border-radius: 50%;
-      background: #e0e0e0;
-      display: inline-block;
-      /* Ensure the avatar image fills the square and maintains aspect ratio */
-      object-fit: cover;
-      /* Center the avatar so the head and shoulders are more balanced */
-      object-position: center;
-    }
-
-    /* Center the name within the text section */
-    .header .text h1 {
-      text-align: center;
-    }
-    /* Center all content inside the text section to align the name in the middle */
-    .header .text {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-    .links {
-      margin-top: 10px;
-    }
-    /* Prevent the contact links in the header from wrapping onto multiple lines */
-    .header .links {
-      white-space: nowrap;
-    }
-    /* Remove default margin on contact links since spacing is handled with non‑breaking spaces */
-    .header .links a {
-      margin-right: 0;
-    }
-    .links a {
-      margin-right: 8px;
-      text-decoration: none;
-      color: #007acc;
-    }
-    /* Styling for small links appended to section titles */
-    .small-links {
-      font-size: 0.8em;
-      font-weight: normal;
-    }
-    .section {
-      margin-bottom: 40px;
-    }
-    .paper {
-      display: flex;
-      flex-wrap: wrap;
-      margin-bottom: 20px;
-    }
-    .paper .placeholder {
-      width: 120px;
-      height: 80px;
-      margin-right: 20px;
-      border-radius: 4px;
-      background: #f0f0f0;
-      display: inline-block;
-    }
-    /* style research project images */
-    .paper img {
-      width: 120px;
-      height: 80px;
-      margin-right: 20px;
-      border-radius: 4px;
-      object-fit: cover;
-    }
-    .paper .description {
-      background: #f7f7f7;
-      padding: 10px;
-      border-radius: 4px;
-      flex: 1;
-    }
-    /* Education item margin and layout */
-    .education-item {
-      margin-bottom: 15px;
-    }
-    /* Education layout: align school/location and degree/dates on single lines */
-    .education-item .header-row {
-      display: flex;
-      justify-content: space-between;
-      width: 100%;
-    }
-    .education-item .school {
-      font-weight: bold;
-      font-size: 1em;
-    }
-    .education-item .location {
-      font-size: 0.95em;
-      white-space: nowrap;
-    }
-    .education-item .degree {
-      font-style: italic;
-      font-size: 0.95em;
-    }
-    .education-item .dates {
-      font-size: 0.95em;
-      white-space: nowrap;
-    }
-    .education-item p {
-      margin: 0;
-      font-size: 0.95em;
-    }
-    /* Experience layout: align company/location and role/dates on single lines */
-    .experience-item {
-      margin-bottom: 15px;
-    }
-    .experience-item .header-row {
-      display: flex;
-      justify-content: space-between;
-      width: 100%;
-    }
-    /* Company names are bold and use the base font size */
-    .experience-item .header-row .company {
-      font-weight: bold;
-      font-size: 1em;
-    }
-    /* Job titles are bold but slightly smaller */
-    .experience-item .header-row .role {
-      font-weight: bold;
-      font-size: 0.95em;
-    }
-    /* Locations use slightly smaller font and stay on one line */
-    .experience-item .header-row .location {
-      font-size: 0.95em;
-      white-space: nowrap;
-    }
-    /* Dates use slightly smaller font and stay on one line */
-    .experience-item .header-row .dates {
-      font-size: 0.95em;
-      white-space: nowrap;
-    }
-    /* Remove indentation for bullet lists so bullets align under headers */
-    .experience-item ul {
-      margin: 0;
-      padding-left: 16px;
-    }
-    .experience-item ul li {
-      margin: 0;
-      padding: 0;
-    }
-    /* Paragraphs inside experience items (used to display bullet items) have no top/bottom margin */
-    /* Style paragraphs in experience items: no margin and slightly smaller font to help long lines fit on one line */
-    .experience-item p {
-      margin: 0;
-      font-size: 0.95em;
-    }
-  </style>
+  <meta name="description" content="Andy (Zehao) Zhao — research in adaptive AI, LLM post-training, multi-agent learning, and AI systems.">
+  <title>Andy (Zehao) Zhao</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500&amp;family=IBM+Plex+Sans:wght@400;500;600&amp;family=IBM+Plex+Serif:wght@500&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="homepage.css">
 </head>
 <body>
-  <div class="header">
-    <div class="text">
-      <h1>Andy (Zehao) Zhao</h1>
-      <p>
-        I am a PhD student in Electrical Engineering &amp; Computer Science at the University of Southern California's
-        <a href="https://aai.usc.edu/" target="_blank" rel="noopener noreferrer">Center of Autonomy &amp; Artificial Intelligence</a>,
-        advised by <a href="https://www.rahuljain.net/" target="_blank" rel="noopener noreferrer">Professor Rahul Jain</a>.
-        My research studies AI agents that learn and adapt after deployment, connecting LLM post-training, multi-agent
-        game theory, test-time adaptation and systems optimization.
-      </p>
-      <p>
-        I am currently a Research Scientist Intern at Meta Superintelligence Lab (FAIR). I previously worked with
-        Microsoft Research's Reinforcement Learning and System Group and Samsung Research America's Advanced ML Lab.
-        My long-term goal is to help build adaptive AI systems that improve through autonomous experimentation while
-        remaining grounded in rigorous evaluation and systems-level co-design.
-      </p>
-      <div class="links">
-        <a href="mailto:zehao.andy.zhao@gmail.com">Email</a>&nbsp;/&nbsp;<a href="AndyZhao_cv.pdf">CV</a>&nbsp;/&nbsp;<a href="https://scholar.google.com/citations?user=vd1CoNIAAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer">Google&nbsp;Scholar</a>&nbsp;/&nbsp;<a href="https://github.com/zehao-zhao" target="_blank" rel="noopener noreferrer">GitHub</a>&nbsp;/&nbsp;<a href="https://www.linkedin.com/in/zehao-zhao/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <nav class="site-nav" aria-label="Primary navigation">
+    <div class="site-nav-inner">
+      <a class="site-wordmark" href="#top">Andy Zhao</a>
+      <div class="site-nav-links">
+        <a href="#news">News</a>
+        <a href="#research">Research</a>
+        <a href="#experience">Experience</a>
+        <a href="#education">Education</a>
       </div>
     </div>
-    <div class="photo">
-      <img src="profile.png" alt="Andy (Zehao) Zhao" class="avatar" />
-    </div>
-  </div>
+  </nav>
 
-  <div class="section">
-    <h2>News</h2>
-    <ul>
-      <li>[Oct&nbsp;2026] Released new preprints on <a href="https://arxiv.org/abs/2610.36109" target="_blank" rel="noopener noreferrer">test-time model updates</a>, <a href="https://arxiv.org/abs/2610.29020" target="_blank" rel="noopener noreferrer">human-AI strategic interactions</a> and <a href="https://arxiv.org/abs/2610.29049" target="_blank" rel="noopener noreferrer">neural path guiding</a>.</li>
-      <li>[Sep&nbsp;2026] <a href="https://arxiv.org/abs/2609.18127" target="_blank" rel="noopener noreferrer">Learning Fractional-Order Dynamics from a Single Trajectory</a> was accepted to NeurIPS&nbsp;2026.</li>
-      <li>[Aug&nbsp;2026] Presented <a href="https://proceedings.mlr.press/v337/zhao26a.html" target="_blank" rel="noopener noreferrer">Efficient Decentralized Learning of Generalized Quantal Response Equilibrium</a> at UAI&nbsp;2026.</li>
-      <li>[Jul&nbsp;2026] Joined Meta Superintelligence Lab (FAIR) as a Research Scientist Intern.</li>
-      <li>[Apr&nbsp;2026] Gave an invited talk on Bayesian learning in episodic zero-sum games at the 47th SoCal Control Workshop.</li>
-      <li>[Apr&nbsp;2026] Joined Microsoft Research's Reinforcement Learning and System Group as a Research Scientist Intern.</li>
-      <li>[2026] Received the MHI Scholar Award and OpenAI Research Credits; placed in the top&nbsp;10 at the Google DeepMind Hackathon.</li>
-      <li>[Dec&nbsp;2025] Completed MATS&nbsp;9.0 research on <a href="https://drive.google.com/file/d/1PY93YNRNOj7x-funYd4n28FbBvenAmts/view?usp=sharing" target="_blank" rel="noopener noreferrer">interpretable feature circuits in LLM reasoning</a>.</li>
-    </ul>
-  </div>
-
-  <div class="section">
-    <h2>Research Highlights</h2>
-    <p>My recent work spans LLM post-training, persistent adaptation, strategic learning and AI systems. Each image below is drawn from the linked paper.</p>
-    <p><small>For works under review, venue tags identify the submission venue.</small></p>
-
-    <div class="paper">
-      <img src="recursive_self_improvement.png" alt="Overview of recursive self-improvement through on-policy distillation">
-      <div class="description">
-        <strong><a href="https://arxiv.org/abs/2609.30652" target="_blank" rel="noopener noreferrer">Recursive Self-Improvement via On-Policy Distillation for Reasoning</a></strong><br>
-        <em>ICLR</em><br>
-        <p>Introduces a recursive framework in which a privileged teacher co-evolves with the student, combining dynamic co-evolution with concise self-refinement for stronger mathematical reasoning.</p>
+  <main id="main" class="page">
+    <header id="top" class="hero">
+      <div class="hero-copy">
+        <h1>Andy (Zehao) Zhao</h1>
+        <p>
+          I am a PhD student in Electrical Engineering &amp; Computer Science at the
+          <a href="https://www.usc.edu/" target="_blank" rel="noopener noreferrer">University of Southern California</a>,
+          working in the <a href="https://aai.usc.edu/" target="_blank" rel="noopener noreferrer">Center of Autonomy &amp; Artificial Intelligence</a>.
+          I am advised by <a href="https://www.rahuljain.net/" target="_blank" rel="noopener noreferrer">Rahul Jain</a>.
+        </p>
+        <p>
+          My research studies AI agents that learn and adapt after deployment, connecting LLM post-training,
+          multi-agent game theory, test-time adaptation, and systems optimization. I currently work with
+          Meta Superintelligence Lab (FAIR), after research roles at Microsoft Research and Samsung Research America.
+        </p>
+        <div class="profile-links" aria-label="Profile links">
+          <a href="mailto:zehao.andy.zhao@gmail.com">Email</a>
+          <a href="AndyZhao_cv.pdf">CV</a>
+          <a href="https://scholar.google.com/citations?user=vd1CoNIAAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer">Google Scholar</a>
+          <a href="https://github.com/zehao-zhao" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <a href="https://www.linkedin.com/in/zehao-zhao/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        </div>
       </div>
-    </div>
+      <img class="hero-photo" src="profile.png" alt="Portrait of Andy (Zehao) Zhao">
+    </header>
 
-    <div class="paper">
-      <img src="control_map.png" alt="Control Map framework for evaluating test-time model updates">
-      <div class="description">
-        <strong><a href="https://arxiv.org/abs/2610.36109" target="_blank" rel="noopener noreferrer">Beyond Update Counts: A Control Map for Evaluating Test-Time Model Updates</a></strong><br>
-        <em>2026 preprint</em><br>
-        <p>Develops an evaluation framework that records update histories and separately measures acquisition, retention, locality and generalization in models that learn at test time.</p>
+    <section aria-labelledby="research-highlights-heading">
+      <div class="section-heading">
+        <h2 id="research-highlights-heading">Research Highlights</h2>
       </div>
-    </div>
-
-    <div class="paper">
-      <img src="cqre.png" alt="Correlated quantal response equilibrium evaluation across strategic games">
-      <div class="description">
-        <strong><a href="https://arxiv.org/abs/2610.29020" target="_blank" rel="noopener noreferrer">Correlated Quantal Response Equilibrium: A New Equilibrium Notion for Human-AI Strategic Interactions</a></strong><br>
-        <em>NeurIPS</em><br>
-        <p>Proposes an equilibrium concept that combines correlated and quantal response equilibria to model mixed human-AI strategic play, with existence, computation and empirical results.</p>
+      <div class="research-intro">
+        I build adaptive AI systems that improve through interaction while remaining grounded in rigorous evaluation.
+        My work connects learning algorithms, strategic behavior, and the systems that make persistent adaptation practical.
       </div>
-    </div>
-
-    <div class="paper">
-      <img src="fractional_dynamics.png" alt="Fractional-order dynamics learning results from a single trajectory">
-      <div class="description">
-        <strong><a href="https://arxiv.org/abs/2609.18127" target="_blank" rel="noopener noreferrer">Learning Fractional-Order Dynamics from a Single Trajectory</a></strong><br>
-        <em>NeurIPS</em><br>
-        <p>Studies system identification with long-range memory and gives a practical estimator with non-asymptotic guarantees for learning fractional-order dynamics from one trajectory.</p>
+      <div class="research-themes">
+        <div class="research-theme">
+          <strong>Persistent Adaptation</strong>
+          <span>Test-time learning, recursive self-improvement, and long-context model plasticity.</span>
+        </div>
+        <div class="research-theme">
+          <strong>Strategic Learning</strong>
+          <span>Multi-agent reasoning, bounded rationality, and human-AI equilibrium models.</span>
+        </div>
+        <div class="research-theme">
+          <strong>AI Systems</strong>
+          <span>Post-training, efficient inference, and systems-level co-design for evolving agents.</span>
+        </div>
       </div>
-    </div>
+    </section>
 
-    <div class="paper">
-      <img src="gqre.png" alt="Convergence results for decentralized learning of generalized quantal response equilibrium">
-      <div class="description">
-        <strong><a href="https://proceedings.mlr.press/v337/zhao26a.html" target="_blank" rel="noopener noreferrer">Efficient Decentralized Learning of Generalized Quantal Response Equilibrium</a></strong><br>
-        <em>UAI&nbsp;2026</em><br>
-        <p>Establishes existence of generalized quantal response equilibria and develops a decentralized no-regret learning algorithm using noisy bandit feedback.</p>
+    <section id="news" aria-labelledby="news-heading">
+      <div class="section-heading">
+        <h2 id="news-heading">News</h2>
       </div>
-    </div>
+      <ul id="news-list" class="news-list">
+        <li class="news-item"><span class="news-date">Oct 2026</span><span>Released new preprints on <a href="https://arxiv.org/abs/2610.36109" target="_blank" rel="noopener noreferrer">test-time model updates</a>, <a href="https://arxiv.org/abs/2610.29020" target="_blank" rel="noopener noreferrer">human-AI strategic interactions</a>, and <a href="https://arxiv.org/abs/2610.29049" target="_blank" rel="noopener noreferrer">neural path guiding</a>.</span></li>
+        <li class="news-item"><span class="news-date">Sep 2026</span><span><a href="https://arxiv.org/abs/2609.18127" target="_blank" rel="noopener noreferrer">Learning Fractional-Order Dynamics from a Single Trajectory</a> was accepted to NeurIPS 2026.</span></li>
+        <li class="news-item"><span class="news-date">Aug 2026</span><span>Presented <a href="https://proceedings.mlr.press/v337/zhao26a.html" target="_blank" rel="noopener noreferrer">Efficient Decentralized Learning of Generalized Quantal Response Equilibrium</a> at UAI 2026.</span></li>
+        <li class="news-item"><span class="news-date">Jul 2026</span><span>Joined Meta Superintelligence Lab (FAIR).</span></li>
+        <li class="news-item"><span class="news-date">Apr 2026</span><span>Gave an invited talk on Bayesian learning in episodic zero-sum games at the 47th SoCal Control Workshop.</span></li>
+        <li class="news-item"><span class="news-date">Apr 2026</span><span>Joined Microsoft Research's Reinforcement Learning and System Group.</span></li>
+        <li class="news-item" data-extra="true"><span class="news-date">2026</span><span>Received the MHI Scholar Award and OpenAI Research Credits; placed in the top 10 at the Google DeepMind Hackathon.</span></li>
+        <li class="news-item" data-extra="true"><span class="news-date">Dec 2025</span><span>Completed MATS 9.0 research on <a href="https://drive.google.com/file/d/1PY93YNRNOj7x-funYd4n28FbBvenAmts/view?usp=sharing" target="_blank" rel="noopener noreferrer">interpretable feature circuits in LLM reasoning</a>.</span></li>
+        <li class="news-item" data-extra="true"><span class="news-date">Jul 2025</span><span>Gave an invited talk at Samsung Advanced ML Lab on evaluating agentic systems and multi-agent LLM post-training.</span></li>
+        <li class="news-item" data-extra="true"><span class="news-date">May 2025</span><span>Joined Samsung Research America's Advanced ML Lab.</span></li>
+        <li class="news-item" data-extra="true"><span class="news-date">Feb 2025</span><span>Received the Early Career Innovator Award.</span></li>
+        <li class="news-item" data-extra="true"><span class="news-date">Sep 2024</span><span>Received the Ming Hsieh Fellowship.</span></li>
+        <li class="news-item" data-extra="true"><span class="news-date">Feb 2024</span><span>Received the Viterbi Graduate Fellowship and Annenberg School Award.</span></li>
+      </ul>
+      <button id="news-toggle" class="text-button news-toggle interactive-controls" type="button" aria-expanded="false" aria-controls="news-list">show more</button>
+    </section>
 
-    <div class="paper">
-      <img src="bayesian_episodic.png" alt="Grid-world experiment for Bayesian learning in episodic zero-sum games">
-      <div class="description">
-        <strong><a href="https://arxiv.org/abs/2603.20604" target="_blank" rel="noopener noreferrer">Bayesian Learning in Episodic Zero-Sum Games</a></strong><br>
-        <em>2026 preprint</em><br>
-        <p>Analyzes posterior sampling in unknown finite-horizon zero-sum Markov games and provides regret guarantees for both symmetric learning and arbitrary opponents.</p>
+    <section id="research" aria-labelledby="research-heading">
+      <div class="section-heading">
+        <h2 id="research-heading">Research</h2>
+        <div class="research-filter interactive-controls" aria-label="Research filter">
+          <button class="text-button is-active" type="button" data-research-filter="selected" aria-pressed="true">show selected</button>
+          <span aria-hidden="true">/</span>
+          <button class="text-button" type="button" data-research-filter="all" aria-pressed="false">show all</button>
+        </div>
       </div>
-    </div>
+      <p class="section-note">Venue tags on works under review identify the submission venue. Each research image is drawn from the linked paper.</p>
 
-    <div class="paper">
-      <img src="art_mpg.png" alt="Rendered scene comparison for autoregressive manifold path guiding">
-      <div class="description">
-        <strong><a href="https://arxiv.org/abs/2610.29049" target="_blank" rel="noopener noreferrer">ART-MPG: Autoregressive R/T Manifold Path Guiding</a></strong><br>
-        <em>2026 preprint</em><br>
-        <p>Introduces topology-conditioned neural sampling for specular light transport, improving rendering error and stability across fourteen scenes.</p>
+      <div id="research-list" class="research-list">
+        <article class="publication" data-selected="true">
+          <img class="publication-image" src="recursive_self_improvement.png" alt="Overview of recursive self-improvement through on-policy distillation">
+          <div>
+            <h3><a href="https://arxiv.org/abs/2609.30652" target="_blank" rel="noopener noreferrer">Recursive Self-Improvement via On-Policy Distillation for Reasoning</a></h3>
+            <div class="publication-meta"><span class="venue">ICLR</span><span class="publication-links"><a href="https://arxiv.org/abs/2609.30652" target="_blank" rel="noopener noreferrer">Paper</a></span></div>
+            <p class="publication-summary">A recursive framework in which a privileged teacher co-evolves with the student, combining dynamic co-evolution with concise self-refinement for stronger mathematical reasoning.</p>
+          </div>
+        </article>
+
+        <article class="publication" data-selected="true">
+          <img class="publication-image" src="control_map.png" alt="Control Map framework for evaluating test-time model updates">
+          <div>
+            <h3><a href="https://arxiv.org/abs/2610.36109" target="_blank" rel="noopener noreferrer">Beyond Update Counts: A Control Map for Evaluating Test-Time Model Updates</a></h3>
+            <div class="publication-meta"><span class="venue">ICLR</span><span class="publication-links"><a href="https://arxiv.org/abs/2610.36109" target="_blank" rel="noopener noreferrer">Paper</a></span></div>
+            <p class="publication-summary">An evaluation framework that records update histories and separately measures acquisition, retention, locality, and generalization in models that learn at test time.</p>
+          </div>
+        </article>
+
+        <article class="publication" data-selected="true">
+          <img class="publication-image" src="cqre.png" alt="Correlated quantal response equilibrium evaluation across strategic games">
+          <div>
+            <h3><a href="https://arxiv.org/abs/2610.29020" target="_blank" rel="noopener noreferrer">Correlated Quantal Response Equilibrium: A New Equilibrium Notion for Human-AI Strategic Interactions</a></h3>
+            <div class="publication-meta"><span class="venue">NeurIPS</span><span class="publication-links"><a href="https://arxiv.org/abs/2610.29020" target="_blank" rel="noopener noreferrer">Paper</a></span></div>
+            <p class="publication-summary">An equilibrium concept combining correlated and quantal response equilibria to model mixed human-AI strategic play, with existence, computation, and empirical results.</p>
+          </div>
+        </article>
+
+        <article class="publication" data-selected="true">
+          <img class="publication-image" src="fractional_dynamics.png" alt="Fractional-order dynamics learning results from a single trajectory">
+          <div>
+            <h3><a href="https://arxiv.org/abs/2609.18127" target="_blank" rel="noopener noreferrer">Learning Fractional-Order Dynamics from a Single Trajectory</a></h3>
+            <div class="publication-meta"><span class="venue">NeurIPS</span><span class="publication-links"><a href="https://arxiv.org/abs/2609.18127" target="_blank" rel="noopener noreferrer">Paper</a></span></div>
+            <p class="publication-summary">System identification with long-range memory and a practical estimator with non-asymptotic guarantees for learning fractional-order dynamics from one trajectory.</p>
+          </div>
+        </article>
+
+        <article class="publication" data-selected="true">
+          <img class="publication-image" src="gqre.png" alt="Convergence results for decentralized learning of generalized quantal response equilibrium">
+          <div>
+            <h3><a href="https://proceedings.mlr.press/v337/zhao26a.html" target="_blank" rel="noopener noreferrer">Efficient Decentralized Learning of Generalized Quantal Response Equilibrium</a></h3>
+            <div class="publication-meta"><span class="venue">UAI 2026</span><span class="publication-links"><a href="https://proceedings.mlr.press/v337/zhao26a.html" target="_blank" rel="noopener noreferrer">Paper</a></span></div>
+            <p class="publication-summary">Existence results for generalized quantal response equilibria and a decentralized no-regret learning algorithm using noisy bandit feedback.</p>
+          </div>
+        </article>
+
+        <article class="publication" data-selected="false">
+          <img class="publication-image" src="bayesian_episodic.png" alt="Grid-world experiment for Bayesian learning in episodic zero-sum games">
+          <div>
+            <h3><a href="https://arxiv.org/abs/2603.20604" target="_blank" rel="noopener noreferrer">Bayesian Learning in Episodic Zero-Sum Games</a></h3>
+            <div class="publication-meta"><span class="venue">2026 preprint</span><span class="publication-links"><a href="https://arxiv.org/abs/2603.20604" target="_blank" rel="noopener noreferrer">Paper</a></span></div>
+            <p class="publication-summary">Posterior sampling in unknown finite-horizon zero-sum Markov games, with regret guarantees for symmetric learning and arbitrary opponents.</p>
+          </div>
+        </article>
+
+        <article class="publication" data-selected="false">
+          <img class="publication-image" src="art_mpg.png" alt="Rendered scene comparison for autoregressive manifold path guiding">
+          <div>
+            <h3><a href="https://arxiv.org/abs/2610.29049" target="_blank" rel="noopener noreferrer">ART-MPG: Autoregressive R/T Manifold Path Guiding</a></h3>
+            <div class="publication-meta"><span class="venue">2026 preprint</span><span class="publication-links"><a href="https://arxiv.org/abs/2610.29049" target="_blank" rel="noopener noreferrer">Paper</a></span></div>
+            <p class="publication-summary">Topology-conditioned neural sampling for specular light transport, improving rendering error and stability across fourteen scenes.</p>
+          </div>
+        </article>
+
+        <article class="publication publication--compact" data-selected="false">
+          <div><h3>Forecast, Act, Correct: Prediction Residual-Stability with Fallible Opponent Models</h3><div class="publication-meta"><span class="venue">ICLR</span></div></div>
+        </article>
+        <article class="publication publication--compact" data-selected="false">
+          <div><h3>Hierarchical Plasticity: Test-Time Adaptation in Long-Context Transformers</h3><div class="publication-meta"><span class="venue">ICLR</span></div></div>
+        </article>
+        <article class="publication publication--compact" data-selected="false">
+          <div><h3>Co-evolutionary Cooperative Game for Multi-Self-Evolving AI Agents: Bounded-Context Equilibrium</h3><div class="publication-meta"><span class="venue">AAAI</span></div></div>
+        </article>
+        <article class="publication publication--compact" data-selected="false">
+          <div><h3>Multi-Agent DPO in Strategic Reasoning for LLM Post-Training</h3><div class="publication-meta"><span class="venue">ICLR</span></div></div>
+        </article>
+        <article class="publication publication--compact" data-selected="false">
+          <div>
+            <h3><a href="https://doi.org/10.1016/j.margeo.2021.106628" target="_blank" rel="noopener noreferrer">Automatic shoreline extraction and change detection: A study on the southeast coast of Bangladesh</a></h3>
+            <div class="publication-meta"><span>Marine Geology, 2021</span><span class="publication-links"><a href="https://doi.org/10.1016/j.margeo.2021.106628" target="_blank" rel="noopener noreferrer">Paper</a></span></div>
+          </div>
+        </article>
+        <article class="publication publication--compact" data-selected="false">
+          <div>
+            <h3><a href="https://arxiv.org/abs/2011.04130" target="_blank" rel="noopener noreferrer">Performance Optimization on Practical Quantum Random Number Generators</a></h3>
+            <div class="publication-meta"><span><em>Physical Review Letters</em>, 2020</span><span class="publication-links"><a href="https://arxiv.org/abs/2011.04130" target="_blank" rel="noopener noreferrer">Paper</a></span></div>
+          </div>
+        </article>
+        <article class="publication publication--compact" data-selected="false">
+          <div>
+            <h3><a href="https://doi.org/10.1088/1742-6596/887/1/012078" target="_blank" rel="noopener noreferrer">Intelligent detection and removing of straight periodic streaks on digital images</a></h3>
+            <div class="publication-meta"><span>Journal of Physics: Conference Series, 2017</span><span class="publication-links"><a href="https://doi.org/10.1088/1742-6596/887/1/012078" target="_blank" rel="noopener noreferrer">Paper</a></span></div>
+          </div>
+        </article>
+        <article class="publication publication--compact" data-selected="false">
+          <div><h3>Land Release Impact Assessment in Colombia</h3><div class="publication-meta"><span>United Nations Open Science and Open Scholarship Conference, 2022</span></div></div>
+        </article>
       </div>
-    </div>
+    </section>
 
-    <h3>Selected submissions</h3>
-    <ul>
-      <li><strong>Forecast, Act, Correct: Prediction Residual-Stability with Fallible Opponent Models</strong> — ICLR.</li>
-      <li><strong>Hierarchical Plasticity: Test-Time Adaptation in Long-Context Transformers</strong> — ICLR.</li>
-      <li><strong>Co-evolutionary Cooperative Game for Multi-Self-Evolving AI Agents: Bounded-Context Equilibrium</strong> — AAAI.</li>
-      <li><strong>Multi-Agent DPO in Strategic Reasoning for LLM Post-Training</strong> — ICLR.</li>
-    </ul>
+    <section id="experience" aria-labelledby="experience-heading">
+      <div class="section-heading"><h2 id="experience-heading">Experience</h2></div>
+      <div class="experience-list">
+        <article class="experience-entry">
+          <div class="entry-mark" aria-hidden="true">MSL</div>
+          <div>
+            <div class="entry-top"><span class="entry-org">Meta Superintelligence Lab (FAIR)</span><span class="entry-year">2026</span></div>
+            <div class="entry-role">Research Scientist</div>
+            <p class="entry-summary">Researching post-training, multi-teacher distillation, test-time training, efficient KV-cache architectures, and persistent long-context adaptation.</p>
+            <p class="entry-people">Mentors:
+              <a href="https://markibrahim.me/" target="_blank" rel="noopener noreferrer">Mark Ibrahim</a>,
+              <a href="https://firooz.us/" target="_blank" rel="noopener noreferrer">Hamed Firooz</a>,
+              <a href="https://scholar.google.com/citations?user=UT_1yjgAAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer">Rui Liu</a>,
+              <a href="https://scholar.google.com/citations?user=AVOFGX0AAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer">Luke Simon</a>,
+              <a href="https://scholar.google.com/citations?user=76KsLBQAAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer">Yuchen Lu</a>, and
+              <a href="https://scholar.google.com/citations?user=qwkzgycAAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer">Chongyang Bai</a>
+            </p>
+          </div>
+        </article>
 
-    <h3>Additional publications</h3>
-    <ul>
-      <li><strong><a href="https://doi.org/10.1016/j.margeo.2021.106628" target="_blank" rel="noopener noreferrer">Automatic shoreline extraction and change detection: A study on the southeast coast of Bangladesh</a></strong>, <em>Marine Geology</em>, 2021.</li>
-      <li><strong><a href="https://arxiv.org/abs/2011.04130" target="_blank" rel="noopener noreferrer">Performance Optimization on Practical Quantum Random Number Generators</a></strong>, arXiv, 2020.</li>
-      <li><strong><a href="https://doi.org/10.1088/1742-6596/887/1/012078" target="_blank" rel="noopener noreferrer">Intelligent detection and removing of straight periodic streaks on digital images</a></strong>, <em>Journal of Physics: Conference Series</em>, 2017.</li>
-      <li><strong>Land Release Impact Assessment in Colombia</strong>, United Nations Open Science and Open Scholarship Conference, 2022.</li>
-    </ul>
-  </div>
+        <article class="experience-entry">
+          <div class="entry-mark" aria-hidden="true">MSR</div>
+          <div>
+            <div class="entry-top"><span class="entry-org">Microsoft Research, Reinforcement Learning and System Group</span><span class="entry-year">2026</span></div>
+            <div class="entry-role">Research Scientist</div>
+            <p class="entry-summary">Developed learning frameworks for populations of self-evolving AI agents while studying systems optimization for heterogeneous AI infrastructure.</p>
+            <p class="entry-people">Mentors:
+              <a href="https://www.microsoft.com/en-us/research/people/ricardob/" target="_blank" rel="noopener noreferrer">Ricardo Bianchini</a>,
+              <a href="https://www.microsoft.com/en-us/research/people/rofons/" target="_blank" rel="noopener noreferrer">Rodrigo Fonseca</a>,
+              <a href="https://haoran-qiu.com/" target="_blank" rel="noopener noreferrer">Haoran Qiu</a>,
+              <a href="https://www.microsoft.com/en-us/research/people/fkazhamiaka/" target="_blank" rel="noopener noreferrer">Fiodar Kazhamiaka</a>, and
+              <a href="https://www.microsoft.com/en-us/research/people/alok-kumbhare/" target="_blank" rel="noopener noreferrer">Alok Kumbhare</a>
+            </p>
+          </div>
+        </article>
 
-  <div class="section">
-    <h2>Experience</h2>
-    <div class="experience-item">
-      <div class="header-row"><div class="company">Meta Superintelligence Lab (FAIR)</div><div class="location">Bay Area, CA</div></div>
-      <div class="header-row"><div class="role">Research Scientist Intern</div><div class="dates">Jul&nbsp;2026 - Present</div></div>
-      <p>• Researching post-training, multi-teacher distillation, test-time training and efficient KV-cache architectures.</p>
-      <p>• Developing methods for persistent model adaptation and improved long-context reasoning.</p>
-    </div>
-    <div class="experience-item">
-      <div class="header-row"><div class="company">Microsoft Research, Reinforcement Learning and System Group</div><div class="location">Redmond, WA</div></div>
-      <div class="header-row"><div class="role">Research Scientist Intern</div><div class="dates">Apr&nbsp;2026 - Jul&nbsp;2026</div></div>
-      <p>• Developed learning frameworks for populations of self-evolving AI agents using game theory and systems optimization.</p>
-      <p>• Studied heterogeneous GPU, CPU, memory and storage allocation for large-scale AI workloads.</p>
-    </div>
-    <div class="experience-item">
-      <div class="header-row"><div class="company">Samsung Research America, Advanced ML Lab</div><div class="location">Mountain View, CA</div></div>
-      <div class="header-row"><div class="role">Research Engineer Intern</div><div class="dates">May&nbsp;2025 - Dec&nbsp;2025</div></div>
-      <p>• Built agentic systems to reduce hallucinations and improve the reasoning capabilities of internal language models.</p>
-      <p>• Researched preference-based post-training, model evaluation and multi-agent reasoning.</p>
-    </div>
-    <div class="experience-item">
-      <div class="header-row"><div class="company">Multiple Startups, LLM Post-Training and Agentic AI</div><div class="location">Bay Area, CA</div></div>
-      <div class="header-row"><div class="role">Founding Research Engineer</div><div class="dates">Sep&nbsp;2023 - Aug&nbsp;2024</div></div>
-      <p>• Built personalized AI systems for a social platform supporting friendship formation and dating experiences.</p>
-      <p>• Post-trained language models using interactions from more than 100 users and over 1,000 user-provided documents.</p>
-    </div>
-    <div class="experience-item">
-      <div class="header-row"><div class="company">Ameriprise Financial</div><div class="location">Boston, MA</div></div>
-      <div class="header-row"><div class="role">Data Scientist</div><div class="dates">Feb&nbsp;2023 - Aug&nbsp;2023</div></div>
-      <p>• Researched data-specific training and evaluation metrics for deep learning in investment applications.</p>
-    </div>
-    <div class="experience-item">
-      <div class="header-row"><div class="company">Massachusetts Institute of Technology</div><div class="location">Cambridge, MA</div></div>
-      <div class="header-row"><div class="role">Research Assistant</div><div class="dates">Sep&nbsp;2021 - Dec&nbsp;2023</div></div>
-      <p>• Developed algorithms for multi-agent game theory, language-model post-training and autonomous systems.</p>
-    </div>
-    <div class="experience-item">
-      <div class="header-row"><div class="company">Berkeley Artificial Intelligence Research (BAIR)</div><div class="location">Berkeley, CA</div></div>
-      <div class="header-row"><div class="role">Research Assistant</div><div class="dates">Sep&nbsp;2019 - May&nbsp;2021</div></div>
-      <p>• Researched model compression and routing algorithms for federated learning with Professor James Demmel.</p>
-      <p>• Developed approximation algorithms for difficult optimization and online-learning problems.</p>
-    </div>
-  </div>
+        <article class="experience-entry">
+          <div class="entry-mark" aria-hidden="true">SRA</div>
+          <div>
+            <div class="entry-top"><span class="entry-org">Samsung Research America, Advanced ML Lab</span><span class="entry-year">2025</span></div>
+            <div class="entry-role">Research Engineer</div>
+            <p class="entry-summary">Built agentic systems for reducing hallucinations and studied preference-based post-training, evaluation, and multi-agent reasoning.</p>
+            <p class="entry-people">Mentor: <a href="https://scholar.google.com/citations?user=FPcI7HkAAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer">Li Li</a></p>
+          </div>
+        </article>
 
-  <div class="section">
-    <h2>Selected Awards &amp; Service</h2>
-    <ul>
-      <li>MHI Scholar Award, Y Combinator Startup School Award, OpenAI Research Credits and Top&nbsp;10 Google DeepMind Hackathon — 2026.</li>
-      <li>MATS Research Award and Early Career Innovator Award — 2025.</li>
-      <li>USC Conference Travel Grant and Ming Hsieh Fellowship — 2024.</li>
-      <li>Viterbi Graduate Fellowship and Annenberg School Award — 2023.</li>
-      <li>Reviewer for NeurIPS, AISTATS and ICML (2025-2026), and UAI&nbsp;2026.</li>
-      <li>Invited research talks at YCML, Cornell, MIT, Caltech, USC and UC Irvine — 2026.</li>
-    </ul>
-  </div>
+        <article class="experience-entry">
+          <div class="entry-mark" aria-hidden="true">AI</div>
+          <div>
+            <div class="entry-top"><span class="entry-org">Multiple Startups, LLM Post-Training and Agentic AI</span><span class="entry-year">2023–24</span></div>
+            <div class="entry-role">Founding Research Engineer</div>
+            <p class="entry-summary">Built personalized AI systems and post-trained language models using interactions from more than 100 users and over 1,000 documents.</p>
+          </div>
+        </article>
 
-  <div class="section">
-    <h2>Education <span class="small-links">(<a href="teaching.html">Teaching</a>&nbsp;/&nbsp;<a href="coursework.html">Coursework</a>&nbsp;/&nbsp;<a href="https://zehao.org">Website</a>)</span></h2>
-    <div class="education-item">
-      <div class="header-row"><div class="school">University of Southern California</div><div class="location">Los Angeles &amp; Bay Area, CA</div></div>
-      <div class="header-row"><div class="degree">PhD in Electrical Engineering &amp; Computer Science, Center of Autonomy &amp; Artificial Intelligence, GPA: 4.0/4.0</div><div class="dates">2024 - Present</div></div>
+        <article class="experience-entry">
+          <div class="entry-mark" aria-hidden="true">AM</div>
+          <div>
+            <div class="entry-top"><span class="entry-org">Ameriprise Financial</span><span class="entry-year">2023</span></div>
+            <div class="entry-role">Data Scientist</div>
+            <p class="entry-summary">Researched data-specific training and evaluation metrics for deep learning in investment applications.</p>
+          </div>
+        </article>
+
+        <article class="experience-entry">
+          <div class="entry-mark" aria-hidden="true">MIT</div>
+          <div>
+            <div class="entry-top"><a class="entry-org" href="https://www.mit.edu/" target="_blank" rel="noopener noreferrer">Massachusetts Institute of Technology</a><span class="entry-year">2021–23</span></div>
+            <div class="entry-role">Research Assistant</div>
+            <p class="entry-summary">Developed algorithms for multi-agent game theory, language-model post-training, and autonomous systems.</p>
+            <p class="entry-people">Advisor: <a href="https://mitsloan.mit.edu/faculty/directory/dimitris-bertsimas" target="_blank" rel="noopener noreferrer">Dimitris Bertsimas</a></p>
+          </div>
+        </article>
+
+        <article class="experience-entry">
+          <div class="entry-mark" aria-hidden="true">BAIR</div>
+          <div>
+            <div class="entry-top"><a class="entry-org" href="https://bair.berkeley.edu/" target="_blank" rel="noopener noreferrer">Berkeley Artificial Intelligence Research</a><span class="entry-year">2019–21</span></div>
+            <div class="entry-role">Research Assistant</div>
+            <p class="entry-summary">Researched model compression, routing for federated learning, and approximation algorithms for difficult optimization and online-learning problems.</p>
+            <p class="entry-people">Advisor: <a href="https://people.eecs.berkeley.edu/~demmel/" target="_blank" rel="noopener noreferrer">James Demmel</a></p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="education" aria-labelledby="education-heading">
+      <div class="section-heading"><h2 id="education-heading">Education</h2></div>
+      <div class="education-list">
+        <article class="education-entry">
+          <div class="entry-mark" aria-hidden="true">USC</div>
+          <div>
+            <div class="entry-top"><a class="entry-org" href="https://www.usc.edu/" target="_blank" rel="noopener noreferrer">University of Southern California</a><span class="entry-year">2024–</span></div>
+            <div class="entry-role">PhD in Electrical Engineering &amp; Computer Science · GPA 4.0/4.0</div>
+            <p class="entry-people">Advisor: <a href="https://www.rahuljain.net/" target="_blank" rel="noopener noreferrer">Rahul Jain</a></p>
+          </div>
+        </article>
+        <article class="education-entry">
+          <div class="entry-mark" aria-hidden="true">MIT</div>
+          <div>
+            <div class="entry-top"><a class="entry-org" href="https://www.mit.edu/" target="_blank" rel="noopener noreferrer">Massachusetts Institute of Technology</a><span class="entry-year">2023</span></div>
+            <div class="entry-role">MS in Operations Research and Business Analytics · GPA 5.0/5.0</div>
+          </div>
+        </article>
+        <article class="education-entry">
+          <div class="entry-mark" aria-hidden="true">UCB</div>
+          <div>
+            <div class="entry-top"><a class="entry-org" href="https://www.berkeley.edu/" target="_blank" rel="noopener noreferrer">University of California, Berkeley</a><span class="entry-year">2022</span></div>
+            <div class="entry-role">BS in Computer Science (Honors), Statistics, Mathematics, and Data Science (Honors) · GPA 3.9/4.0</div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section aria-labelledby="awards-heading">
+      <div class="section-heading"><h2 id="awards-heading">Awards &amp; Service</h2></div>
+      <div class="two-column">
+        <div>
+          <h3>Selected Honors</h3>
+          <ul class="plain-list">
+            <li>MHI Scholar Award, YC Startup School Award, OpenAI Research Credits, and Top 10 Google DeepMind Hackathon — 2026</li>
+            <li>MATS Research Award and Early Career Innovator Award — 2025</li>
+            <li>USC Conference Travel Grant and Ming Hsieh Fellowship — 2024</li>
+            <li>Viterbi Graduate Fellowship and Annenberg School Award — 2023</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Professional Service</h3>
+          <ul class="plain-list">
+            <li>Reviewer for NeurIPS, AISTATS, ICML, and UAI</li>
+            <li>Invited research talks at YCML, Cornell, MIT, Caltech, USC, and UC Irvine</li>
+            <li><a href="teaching.html">Teaching</a> and <a href="coursework.html">coursework</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="page footer">
+    <div class="footer-inner">
+      <span>Andy (Zehao) Zhao</span>
+      <a href="#top">Back to top</a>
     </div>
-    <div class="education-item">
-      <div class="header-row"><div class="school">Massachusetts Institute of Technology</div><div class="location">Cambridge, MA</div></div>
-      <div class="header-row"><div class="degree">Master of Science in Operations Research and Business Analytics, GPA: 5.0/5.0</div><div class="dates">2023</div></div>
-    </div>
-    <div class="education-item">
-      <div class="header-row"><div class="school">University of California, Berkeley</div><div class="location">Berkeley, CA</div></div>
-      <div class="header-row"><div class="degree">Bachelor of Science in Computer Science (Honors), Statistics, Mathematics and Data Science (Honors), GPA: 3.9/4.0</div><div class="dates">2022</div></div>
-      <p>• Four majors with honors in Computer Science and Data Science.</p>
-    </div>
-  </div>
+  </footer>
+
+  <script src="homepage.js"></script>
 </body>
 </html>
