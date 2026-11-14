@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" role="img" aria-labelledby="title desc">
+  <title id="title">Detection and removal of periodic image streaks</title>
+  <desc id="desc">Noisy streaked image transformed into a clean image through frequency filtering</desc>
+  <defs><linearGradient id="paper" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f8f0e2"/><stop offset="1" stop-color="#e9e2d5"/></linearGradient></defs>
+  <rect width="900" height="600" fill="url(#paper)"/>
+  <g transform="translate(55 105)">
+    <rect width="280" height="390" rx="20" fill="#315f7d"/>
+    <path d="M0 320 68 229l57 48 65-117 90 93v137H0z" fill="#79aaa5"/>
+    <circle cx="89" cy="104" r="43" fill="#e7b85b"/>
+    <g stroke="#fff" stroke-width="11" opacity=".72"><path d="m-10 80 300 74"/><path d="m-10 132 300 74"/><path d="m-10 184 300 74"/><path d="m-10 236 300 74"/><path d="m-10 288 300 74"/></g>
+  </g>
+  <g transform="translate(379 170)">
+    <circle cx="72" cy="130" r="72" fill="#fffaf0" stroke="#173b52" stroke-width="10"/>
+    <path d="M72 80v100M22 130h100" stroke="#79aaa5" stroke-width="9" stroke-linecap="round"/>
+    <circle cx="72" cy="80" r="10" fill="#ed7a5a"/><circle cx="72" cy="180" r="10" fill="#ed7a5a"/>
+    <path d="M154 130h66" stroke="#173b52" stroke-width="12" stroke-linecap="round"/>
+    <path d="m204 112 26 18-26 18" fill="none" stroke="#173b52" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <g transform="translate(565 105)">
+    <rect width="280" height="390" rx="20" fill="#315f7d"/>
+    <path d="M0 320 68 229l57 48 65-117 90 93v137H0z" fill="#79aaa5"/>
+    <circle cx="89" cy="104" r="43" fill="#e7b85b"/>
+  </g>
+</svg>

@@ -399,6 +399,18 @@ h3 {
   font-weight: 500;
 }
 
+.entry-logo {
+  box-sizing: border-box;
+  object-fit: contain;
+  padding: 9px;
+}
+
+.publication-links {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 7px 12px;
+}
+
 .entry-top {
   display: flex;
   align-items: baseline;
