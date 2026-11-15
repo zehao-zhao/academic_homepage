@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500&amp;family=IBM+Plex+Sans:wght@400;500;600&amp;family=IBM+Plex+Serif:wght@500&amp;display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="homepage.css?v=20261114b">
+  <link rel="stylesheet" href="homepage.css?v=20261114c">
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -38,12 +38,15 @@
         <p>
           My research studies AI agents that learn and adapt after deployment, connecting LLM post-training,
           multi-agent game theory, test-time adaptation, and systems optimization. I currently work with
-          Meta Superintelligence Lab (FAIR), after research roles at Microsoft Research and Samsung Research America.
+          <a href="https://ai.meta.com/research/" target="_blank" rel="noopener noreferrer">Meta Superintelligence Lab (FAIR)</a>,
+          after research roles at <a href="https://www.microsoft.com/en-us/research/" target="_blank" rel="noopener noreferrer">Microsoft Research</a>
+          and <a href="https://sra.samsung.com/" target="_blank" rel="noopener noreferrer">Samsung Research America</a>.
         </p>
         <p>
           Previously, I studied at the <a href="https://orc.mit.edu/" target="_blank" rel="noopener noreferrer">MIT Operations Research Center</a>
-          with <a href="https://mitsloan.mit.edu/faculty/directory/dimitris-bertsimas" target="_blank" rel="noopener noreferrer">Dimitris Bertsimas</a>,
-          and at <a href="https://www.berkeley.edu/" target="_blank" rel="noopener noreferrer">UC Berkeley</a>, where I worked with
+          with <a href="https://mitsloan.mit.edu/faculty/directory/dimitris-bertsimas" target="_blank" rel="noopener noreferrer">Dimitris Bertsimas</a>.
+          At <a href="https://www.berkeley.edu/" target="_blank" rel="noopener noreferrer">UC Berkeley</a>, I was the first student in the university's history
+          to complete a quadruple major in Electrical Engineering &amp; Computer Sciences, Statistics, Pure Mathematics, and Data Science. I worked with
           <a href="https://people.eecs.berkeley.edu/~demmel/" target="_blank" rel="noopener noreferrer">James Demmel</a>,
           <a href="https://physics.berkeley.edu/people/faculty/saul-perlmutter" target="_blank" rel="noopener noreferrer">Saul Perlmutter</a>, and
           <a href="https://jiahaoyao.github.io/" target="_blank" rel="noopener noreferrer">Jiahao Yao</a>.
@@ -59,27 +62,25 @@
       <img class="hero-photo" src="profile.png" alt="Portrait of Andy (Zehao) Zhao">
     </header>
 
-    <section aria-labelledby="research-highlights-heading">
+    <section class="research-highlights" aria-labelledby="research-highlights-heading">
       <div class="section-heading">
         <h2 id="research-highlights-heading">Research Highlights</h2>
       </div>
-      <div class="research-intro">
-        I build adaptive AI systems that improve through interaction while remaining grounded in rigorous evaluation.
-        My work connects learning algorithms, strategic behavior, and the systems that make persistent adaptation practical.
-      </div>
-      <div class="research-themes">
-        <div class="research-theme">
-          <strong>Persistent Adaptation</strong>
-          <span>Test-time learning, recursive self-improvement, and long-context model plasticity.</span>
-        </div>
-        <div class="research-theme">
-          <strong>Strategic Learning</strong>
-          <span>Multi-agent reasoning, bounded rationality, and human-AI equilibrium models.</span>
-        </div>
-        <div class="research-theme">
-          <strong>AI Systems</strong>
-          <span>Post-training, efficient inference, and systems-level co-design for evolving agents.</span>
-        </div>
+      <div class="research-statement">
+        <p class="research-statement-lead">
+          My research focuses on <strong>adaptive intelligence</strong>: AI agents and language models that continue to learn,
+          reason, and coordinate after deployment. The goal is to make adaptation persistent—new capabilities should be
+          acquired at test time, retained across long contexts, and improved through interaction without sacrificing stability or efficiency.
+        </p>
+        <p class="research-thesis">
+          Across LLM post-training, multi-agent game theory, test-time adaptation, and systems optimization, I pursue one question:
+          <strong>how can an AI system keep getting better after it enters the world?</strong>
+        </p>
+        <ul class="research-directions">
+          <li><strong>Persistent Adaptation:</strong> Building test-time learning, recursive self-improvement, and long-context plasticity mechanisms that acquire new behavior while measuring retention, locality, and generalization.</li>
+          <li><strong>Strategic Multi-Agent Learning:</strong> Studying bounded-rational equilibria, cooperative self-evolution, and preference optimization for agents that learn from—and against—other decision-makers.</li>
+          <li><strong>Efficient Systems for Evolving Models:</strong> Co-designing post-training and inference through multi-teacher distillation, efficient KV caches, and heterogeneous compute systems that make continuous adaptation practical.</li>
+        </ul>
       </div>
     </section>
 
@@ -91,9 +92,7 @@
         <li class="news-item"><span class="news-date">Oct 2026</span><span>Released new preprints on <a href="https://arxiv.org/abs/2610.36109" target="_blank" rel="noopener noreferrer">test-time model updates</a>, <a href="https://arxiv.org/abs/2610.29020" target="_blank" rel="noopener noreferrer">human-AI strategic interactions</a>, and <a href="https://arxiv.org/abs/2610.29049" target="_blank" rel="noopener noreferrer">neural path guiding</a>.</span></li>
         <li class="news-item"><span class="news-date">Sep 2026</span><span><a href="https://arxiv.org/abs/2609.18127" target="_blank" rel="noopener noreferrer">Learning Fractional-Order Dynamics from a Single Trajectory</a> was accepted to NeurIPS 2026.</span></li>
         <li class="news-item"><span class="news-date">Aug 2026</span><span>Presented <a href="https://proceedings.mlr.press/v337/zhao26a.html" target="_blank" rel="noopener noreferrer">Efficient Decentralized Learning of Generalized Quantal Response Equilibrium</a> at UAI.</span></li>
-        <li class="news-item"><span class="news-date">Jul 2026</span><span>Joined Meta Superintelligence Lab (FAIR).</span></li>
         <li class="news-item"><span class="news-date">Apr 2026</span><span>Gave an invited talk on Bayesian learning in episodic zero-sum games at the 47th SoCal Control Workshop.</span></li>
-        <li class="news-item"><span class="news-date">Apr 2026</span><span>Joined Microsoft Research's Reinforcement Learning and System Group.</span></li>
         <li class="news-item" data-extra="true"><span class="news-date">2026</span><span>Received the MHI Scholar Award and OpenAI Research Credits; placed in the top 10 at the Google DeepMind Hackathon.</span></li>
         <li class="news-item" data-extra="true"><span class="news-date">Dec 2025</span><span>Completed MATS 9.0 research on <a href="https://drive.google.com/file/d/1PY93YNRNOj7x-funYd4n28FbBvenAmts/view?usp=sharing" target="_blank" rel="noopener noreferrer">interpretable feature circuits in LLM reasoning</a>.</span></li>
         <li class="news-item" data-extra="true"><span class="news-date">Jul 2025</span><span>Gave an invited talk at Samsung Advanced ML Lab on evaluating agentic systems and multi-agent LLM post-training.</span></li>
@@ -106,7 +105,7 @@
     </section>
 
     <section id="research" aria-labelledby="research-heading">
-      <div class="section-heading">
+      <div class="section-heading section-heading--research">
         <h2 id="research-heading">Research</h2>
         <div class="research-filter interactive-controls" aria-label="Research filter">
           <button class="text-button is-active" type="button" data-research-filter="selected" aria-pressed="true">show selected</button>
@@ -114,7 +113,6 @@
           <button class="text-button" type="button" data-research-filter="all" aria-pressed="false">show all</button>
         </div>
       </div>
-      <p class="section-note">Venue tags on works under review identify the submission venue. Research images are drawn from linked papers or project materials.</p>
 
       <div id="research-list" class="research-list">
         <article class="publication" data-selected="true">
@@ -246,7 +244,7 @@
         <article class="experience-entry">
           <img class="entry-mark entry-logo" src="assets/logos/meta.png" alt="Meta logo">
           <div>
-            <div class="entry-top"><span class="entry-org">Meta Superintelligence Lab (FAIR)</span><span class="entry-year">2026</span></div>
+            <div class="entry-top"><a class="entry-org" href="https://ai.meta.com/research/" target="_blank" rel="noopener noreferrer">Meta Superintelligence Lab (FAIR)</a><span class="entry-year">2026</span></div>
             <div class="entry-role">Research Scientist</div>
             <p class="entry-summary">Researching post-training, multi-teacher distillation, test-time training, efficient KV-cache architectures, and persistent long-context adaptation.</p>
             <p class="entry-people">Mentors:
@@ -263,7 +261,7 @@
         <article class="experience-entry">
           <img class="entry-mark entry-logo" src="assets/logos/microsoft.png" alt="Microsoft logo">
           <div>
-            <div class="entry-top"><span class="entry-org">Microsoft Research, Reinforcement Learning and System Group</span><span class="entry-year">2026</span></div>
+            <div class="entry-top"><a class="entry-org" href="https://www.microsoft.com/en-us/research/" target="_blank" rel="noopener noreferrer">Microsoft Research, Reinforcement Learning and System Group</a><span class="entry-year">2026</span></div>
             <div class="entry-role">Research Scientist</div>
             <p class="entry-summary">Developed learning frameworks for populations of self-evolving AI agents while studying systems optimization for heterogeneous AI infrastructure.</p>
             <p class="entry-people">Mentors:
@@ -279,14 +277,15 @@
         <article class="experience-entry">
           <img class="entry-mark entry-logo" src="assets/logos/samsung.png" alt="Samsung logo">
           <div>
-            <div class="entry-top"><span class="entry-org">Samsung Research America, Advanced ML Lab</span><span class="entry-year">2025</span></div>
+            <div class="entry-top"><a class="entry-org" href="https://sra.samsung.com/" target="_blank" rel="noopener noreferrer">Samsung Research America, Advanced ML Lab</a><span class="entry-year">2025</span></div>
             <div class="entry-role">Research Engineer</div>
             <p class="entry-summary">Built agentic systems for reducing hallucinations and studied preference-based post-training, evaluation, and multi-agent reasoning.</p>
             <p class="entry-people">Mentor: <a href="https://scholar.google.com/citations?user=FPcI7HkAAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer">Li Li</a></p>
           </div>
         </article>
 
-        <article class="experience-entry experience-entry--no-logo">
+        <article class="experience-entry">
+          <img class="entry-mark entry-logo entry-logo--wide" src="assets/logos/omnigpt.png" alt="omniGPT logo">
           <div>
             <div class="entry-top"><span class="entry-org">Multiple Startups, LLM Post-Training and Agentic AI</span><span class="entry-year">2023–24</span></div>
             <div class="entry-role">Founding Research Engineer</div>
@@ -342,13 +341,15 @@
           <div>
             <div class="entry-top"><a class="entry-org" href="https://www.mit.edu/" target="_blank" rel="noopener noreferrer">Massachusetts Institute of Technology</a><span class="entry-year">2023</span></div>
             <div class="entry-role">MS in Operations Research and Business Analytics · GPA 5.0/5.0</div>
+            <p class="entry-people">Advisor: <a href="https://mitsloan.mit.edu/faculty/directory/dimitris-bertsimas" target="_blank" rel="noopener noreferrer">Dimitris Bertsimas</a></p>
           </div>
         </article>
         <article class="education-entry">
           <img class="entry-mark entry-logo" src="assets/logos/berkeley.png" alt="UC Berkeley logo">
           <div>
             <div class="entry-top"><a class="entry-org" href="https://www.berkeley.edu/" target="_blank" rel="noopener noreferrer">University of California, Berkeley</a><span class="entry-year">2022</span></div>
-            <div class="entry-role">BS in Computer Science (Honors), Statistics, Mathematics, and Data Science (Honors) · GPA 3.9/4.0</div>
+            <div class="entry-role">BS, quadruple major in Electrical Engineering &amp; Computer Sciences (Honors), Statistics, Pure Mathematics, and Data Science (Honors)—first in UC Berkeley history · GPA 3.9/4.0</div>
+            <p class="entry-people">Advisors: <a href="https://people.eecs.berkeley.edu/~demmel/" target="_blank" rel="noopener noreferrer">James Demmel</a> and <a href="https://physics.berkeley.edu/people/faculty/saul-perlmutter" target="_blank" rel="noopener noreferrer">Saul Perlmutter</a></p>
           </div>
         </article>
       </div>

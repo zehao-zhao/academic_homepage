@@ -193,36 +193,40 @@ h3 {
   font-size: 14px;
 }
 
-.research-intro {
-  max-width: 880px;
-  margin-bottom: 30px;
-  font-size: 1.05rem;
+.research-statement {
+  max-width: 940px;
 }
 
-.research-themes {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 16px;
-  margin-top: 26px;
+.research-statement p {
+  margin-bottom: 20px;
 }
 
-.research-theme {
-  padding: 17px;
-  border: 1px solid var(--line);
-  border-radius: 4px;
+.research-statement-lead {
+  font-size: 1.08rem;
+  line-height: 1.72;
+}
+
+.research-thesis {
+  padding: 18px 22px;
+  border-left: 3px solid var(--accent);
   background: var(--surface);
+  font-family: "IBM Plex Serif", Georgia, serif;
+  font-size: 1.05rem;
+  line-height: 1.65;
 }
 
-.research-theme strong {
-  display: block;
-  margin-bottom: 5px;
-  font-size: 15px;
+.research-directions {
+  margin: 24px 0 0;
+  padding-left: 21px;
 }
 
-.research-theme span {
-  color: var(--muted);
-  font-size: 14px;
-  line-height: 1.5;
+.research-directions li {
+  margin-bottom: 12px;
+  padding-left: 4px;
+}
+
+.research-directions strong {
+  color: #244c65;
 }
 
 .news-list {
@@ -289,6 +293,11 @@ h3 {
   color: var(--muted);
   font-size: 14px;
   white-space: nowrap;
+}
+
+.section-heading--research {
+  justify-content: flex-start;
+  gap: 18px;
 }
 
 .research-list {
@@ -405,9 +414,8 @@ h3 {
   padding: 9px;
 }
 
-.experience-entry--no-logo {
-  grid-template-columns: 1fr;
-  padding-left: 92px;
+.entry-logo--wide {
+  padding: 5px;
 }
 
 .publication-links {
@@ -620,10 +628,6 @@ h3 {
     height: 44px;
   }
 
-  .experience-entry--no-logo {
-    grid-template-columns: 1fr;
-    padding-left: 62px;
-  }
 }
 
 @media (prefers-reduced-motion: reduce) {
