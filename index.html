@@ -67,8 +67,8 @@
       </div>
       <div class="research-statement">
         <p class="research-statement-lead">
-          My research focuses on <strong>adaptive intelligence</strong>: AI agents and language models that continue to learn,
-          reason, and coordinate after deployment. The goal is to make adaptation persistent—new capabilities should be
+          My research focuses on <strong>adaptive intelligence</strong>: proactive AI agents and language models that continue to learn,
+          anticipate, reason, and coordinate after deployment. The goal is to make adaptation persistent—new capabilities should be
           acquired at test time, retained across long contexts, and improved through interaction without sacrificing stability or efficiency.
         </p>
         <p class="research-thesis">
@@ -76,8 +76,8 @@
           <strong>how can an AI system keep getting better after it enters the world?</strong>
         </p>
         <ul class="research-directions">
-          <li><strong>Persistent Adaptation:</strong> Building test-time learning, recursive self-improvement, and long-context plasticity mechanisms that acquire new behavior while measuring retention, locality, and generalization.</li>
-          <li><strong>Strategic Multi-Agent Learning:</strong> Studying bounded-rational equilibria, cooperative self-evolution, and preference optimization for agents that learn from—and against—other decision-makers.</li>
+          <li><strong>Persistent Adaptation:</strong> Building test-time learning, recursive self-improvement, on-policy distillation with black-box teachers, and long-context plasticity mechanisms that acquire new behavior while measuring retention, locality, and generalization.</li>
+          <li><strong>Proactive &amp; Strategic Agents:</strong> Developing situation-aware agents while studying bounded-rational equilibria, cooperative self-evolution, and preference optimization for agents that learn from—and against—other decision-makers.</li>
           <li><strong>Efficient Systems for Evolving Models:</strong> Co-designing post-training and inference through multi-teacher distillation, efficient KV caches, and heterogeneous compute systems that make continuous adaptation practical.</li>
         </ul>
       </div>
@@ -88,6 +88,7 @@
         <h2 id="news-heading">News</h2>
       </div>
       <ul id="news-list" class="news-list">
+        <li class="news-item"><span class="news-date">Nov 2026</span><span>Started new research on proactive agents with situation awareness and on-policy distillation with black-box teachers.</span></li>
         <li class="news-item"><span class="news-date">Oct 2026</span><span>Released new preprints on <a href="https://arxiv.org/abs/2610.36109" target="_blank" rel="noopener noreferrer">test-time model updates</a>, <a href="https://arxiv.org/abs/2610.29020" target="_blank" rel="noopener noreferrer">human-AI strategic interactions</a>, and <a href="https://arxiv.org/abs/2610.29049" target="_blank" rel="noopener noreferrer">neural path guiding</a>.</span></li>
         <li class="news-item"><span class="news-date">Sep 2026</span><span><a href="https://arxiv.org/abs/2609.18127" target="_blank" rel="noopener noreferrer">Learning Fractional-Order Dynamics from a Single Trajectory</a> was accepted to NeurIPS 2026.</span></li>
         <li class="news-item"><span class="news-date">Aug 2026</span><span>Presented <a href="https://proceedings.mlr.press/v337/zhao26a.html" target="_blank" rel="noopener noreferrer">Efficient Decentralized Learning of Generalized Quantal Response Equilibrium</a> at UAI.</span></li>
@@ -114,6 +115,22 @@
       </div>
 
       <div id="research-list" class="research-list">
+        <article class="publication publication--compact" data-selected="true">
+          <div>
+            <h3>Proactive Agent with Situation Awareness</h3>
+            <div class="publication-meta"><span class="venue">ICML</span></div>
+            <p class="publication-summary">Proactive agents that maintain situation awareness and adapt their plans as multi-agent environments and other decision-makers change.</p>
+          </div>
+        </article>
+
+        <article class="publication publication--compact" data-selected="true">
+          <div>
+            <h3>Black-Box Teachers: On-Policy Distillation with Forward KL</h3>
+            <div class="publication-meta"><span class="venue">ICML</span></div>
+            <p class="publication-summary">On-policy distillation from black-box teachers using forward-KL objectives to improve reasoning while keeping training aligned with the student's evolving behavior.</p>
+          </div>
+        </article>
+
         <article class="publication" data-selected="true">
           <img class="publication-image" src="recursive_self_improvement.png" alt="Overview of recursive self-improvement through on-policy distillation">
           <div>
@@ -136,7 +153,7 @@
           <img class="publication-image" src="cqre.png" alt="Correlated quantal response equilibrium evaluation across strategic games">
           <div>
             <h3><a href="https://arxiv.org/abs/2610.29020" target="_blank" rel="noopener noreferrer">Correlated Quantal Response Equilibrium: A New Equilibrium Notion for Human-AI Strategic Interactions</a></h3>
-            <div class="publication-meta"><span class="venue">NeurIPS</span><span class="publication-links"><a href="https://arxiv.org/abs/2610.29020" target="_blank" rel="noopener noreferrer">Paper</a></span></div>
+            <div class="publication-meta"><span class="venue">AISTATS</span><span class="publication-links"><a href="https://arxiv.org/abs/2610.29020" target="_blank" rel="noopener noreferrer">Paper</a></span></div>
             <p class="publication-summary">An equilibrium concept combining correlated and quantal response equilibria to model mixed human-AI strategic play, with existence, computation, and empirical results.</p>
           </div>
         </article>
@@ -163,7 +180,7 @@
           <img class="publication-image" src="bayesian_episodic.png" alt="Grid-world experiment for Bayesian learning in episodic zero-sum games">
           <div>
             <h3><a href="https://arxiv.org/abs/2603.20604" target="_blank" rel="noopener noreferrer">Bayesian Learning in Episodic Zero-Sum Games</a></h3>
-            <div class="publication-meta"><span class="venue">2026 preprint</span><span class="publication-links"><a href="https://arxiv.org/abs/2603.20604" target="_blank" rel="noopener noreferrer">Paper</a></span></div>
+            <div class="publication-meta"><span class="venue">IEEE TAC</span><span class="publication-links"><a href="https://arxiv.org/abs/2603.20604" target="_blank" rel="noopener noreferrer">Paper</a></span></div>
             <p class="publication-summary">Posterior sampling in unknown finite-horizon zero-sum Markov games, with regret guarantees for symmetric learning and arbitrary opponents.</p>
           </div>
         </article>
@@ -180,7 +197,7 @@
         <article class="publication publication--compact" data-selected="false">
           <div>
             <h3>Forecast, Act, Correct: Prediction Residual-Stability with Fallible Opponent Models</h3>
-            <div class="publication-meta"><span class="venue">ICLR</span></div>
+            <div class="publication-meta"><span class="venue">ICML</span></div>
             <p class="publication-summary">A residual-stability framework for acting against imperfect opponent models, using prediction errors to correct behavior without destabilizing the learning loop.</p>
           </div>
         </article>
@@ -245,7 +262,7 @@
           <div>
             <div class="entry-top"><a class="entry-org" href="https://ai.meta.com/research/" target="_blank" rel="noopener noreferrer">Meta Superintelligence Lab (FAIR)</a><span class="entry-year">2026</span></div>
             <div class="entry-role">Research Scientist</div>
-            <p class="entry-summary">Researching post-training, multi-teacher distillation, test-time training, efficient KV-cache architectures, and persistent long-context adaptation.</p>
+            <p class="entry-summary">Researching test-time training, model plasticity, situation-aware proactive agents in changing multi-agent environments, recursive self-improvement, on-policy distillation with black-box teachers, and efficient KV-cache architectures.</p>
             <p class="entry-people">Mentors:
               <a href="https://markibrahim.me/" target="_blank" rel="noopener noreferrer">Mark Ibrahim</a>,
               <a href="https://firooz.us/" target="_blank" rel="noopener noreferrer">Hamed Firooz</a>,
@@ -284,11 +301,21 @@
         </article>
 
         <article class="experience-entry">
+          <img class="entry-mark entry-logo" src="assets/logos/usc.png" alt="USC logo">
+          <div>
+            <div class="entry-top"><a class="entry-org" href="https://aai.usc.edu/" target="_blank" rel="noopener noreferrer">USC Center for Autonomy &amp; Artificial Intelligence</a><span class="entry-year">2023–26</span></div>
+            <div class="entry-role">Research Assistant</div>
+            <p class="entry-summary">Developed multi-agent reinforcement learning and post-training alignment methods, applying game theory to language-model post-training, human-AI strategic play, and multi-objective preference optimization.</p>
+            <p class="entry-people">Advisor: <a href="https://www.rahuljain.net/" target="_blank" rel="noopener noreferrer">Rahul Jain</a></p>
+          </div>
+        </article>
+
+        <article class="experience-entry">
           <img class="entry-mark entry-logo entry-logo--wide" src="assets/logos/omnigpt.png" alt="omniGPT logo">
           <div>
-            <div class="entry-top"><span class="entry-org">Multiple Startups, LLM Post-Training and Agentic AI</span><span class="entry-year">2023–24</span></div>
+            <div class="entry-top"><span class="entry-org">Multiple Startups (OmniGPT, FlowGPT, Ditto.AI), LLM Post-Training and Agentic AI</span><span class="entry-year">2023–25</span></div>
             <div class="entry-role">Founding Research Engineer</div>
-            <p class="entry-summary">Built personalized AI systems and post-trained language models using interactions from more than 100 users and over 1,000 documents.</p>
+            <p class="entry-summary">Built personalized AI systems and post-trained language models using interactions from more than 100 users and over 10,000 documents across long contexts and time horizons.</p>
             <p class="entry-people">Advisor: <a href="https://business.columbia.edu/faculty/people/tianyi-peng" target="_blank" rel="noopener noreferrer">Tianyi Peng</a></p>
           </div>
         </article>
@@ -305,9 +332,9 @@
         <article class="experience-entry">
           <img class="entry-mark entry-logo" src="assets/logos/mit.png" alt="MIT logo">
           <div>
-            <div class="entry-top"><a class="entry-org" href="https://www.mit.edu/" target="_blank" rel="noopener noreferrer">Massachusetts Institute of Technology</a><span class="entry-year">2021–23</span></div>
+            <div class="entry-top"><a class="entry-org" href="https://www.csail.mit.edu/" target="_blank" rel="noopener noreferrer">MIT CSAIL and Operations Research Center</a><span class="entry-year">2021–23</span></div>
             <div class="entry-role">Research Assistant</div>
-            <p class="entry-summary">Developed algorithms for multi-agent game theory, language-model post-training, and autonomous systems.</p>
+            <p class="entry-summary">Developed optimization algorithms for multi-agent and counterfactual learning, including polynomial-time approximation methods for difficult optimization and online-learning problems.</p>
             <p class="entry-people">Advisor: <a href="https://mitsloan.mit.edu/faculty/directory/dimitris-bertsimas" target="_blank" rel="noopener noreferrer">Dimitris Bertsimas</a></p>
           </div>
         </article>
@@ -332,6 +359,7 @@
           <div>
             <div class="entry-top"><a class="entry-org" href="https://www.usc.edu/" target="_blank" rel="noopener noreferrer">University of Southern California</a><span class="entry-year">2023–</span></div>
             <div class="entry-role">PhD in Electrical Engineering &amp; Computer Science · GPA 4.0/4.0</div>
+            <p class="entry-summary">Master's degrees earned en route to the PhD: Computer Science and Pure Mathematics.</p>
             <p class="entry-people">Advisor: <a href="https://www.rahuljain.net/" target="_blank" rel="noopener noreferrer">Rahul Jain</a></p>
           </div>
         </article>
